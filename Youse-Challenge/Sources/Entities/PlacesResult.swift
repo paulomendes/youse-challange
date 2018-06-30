@@ -1,13 +1,19 @@
 import Foundation
 
-struct PlacesResult: Model {
-    let icon: URL
+struct PlacesResult: Decodable {
     let placeId: String
+    let icon: URL
     let name: String
-    let rating: Double
     let vicinity: String
+    
+    enum CodingKeys: String, CodingKey {
+        case placeId = "place_id"
+        case icon
+        case name
+        case vicinity
+    }
 }
 
-struct ResultList: Model {
+struct ResultList: Decodable {
     let results: [PlacesResult]
 }

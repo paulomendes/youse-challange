@@ -29,6 +29,11 @@
 		53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0420E66A4C002784E6 /* PlaceDetailsParametersTests.swift */; };
 		53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0620E66CC9002784E6 /* GooglePlacesTargetTests.swift */; };
 		53714D0920E6A9E6002784E6 /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0820E6A9E6002784E6 /* RequestProvider.swift */; };
+		8062E05C20E70C7400F831ED /* nearby.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E05B20E70C7400F831ED /* nearby.json */; };
+		8062E05F20E70CAA00F831ED /* PlacesResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E05E20E70CAA00F831ED /* PlacesResultTest.swift */; };
+		8062E06220E70FA700F831ED /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06120E70FA700F831ED /* Stub.swift */; };
+		8062E06420E7103700F831ED /* nearby-result-entry.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E06320E7103700F831ED /* nearby-result-entry.json */; };
+		8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06520E711DE00F831ED /* ResultListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		53714D0620E66CC9002784E6 /* GooglePlacesTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesTargetTests.swift; sourceTree = "<group>"; };
 		53714D0820E6A9E6002784E6 /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
 		758024C18A7AF6E85E2676F7 /* Pods-Youse-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-ChallengeTests/Pods-Youse-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8062E05B20E70C7400F831ED /* nearby.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nearby.json; sourceTree = "<group>"; };
+		8062E05E20E70CAA00F831ED /* PlacesResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResultTest.swift; sourceTree = "<group>"; };
+		8062E06120E70FA700F831ED /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		8062E06320E7103700F831ED /* nearby-result-entry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "nearby-result-entry.json"; sourceTree = "<group>"; };
+		8062E06520E711DE00F831ED /* ResultListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTests.swift; sourceTree = "<group>"; };
 		D3A2CEDB0CBD23A109D0487E /* Pods_Youse_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youse_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFFF1613A2CF55CC971A3EF /* Pods-Youse-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		F1563147B4E61C09CF28FC56 /* Pods-Youse-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +147,7 @@
 		536A8FB120E5511F008FBFF5 /* Youse-ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				8062E05820E70C4200F831ED /* Fixtures */,
 				53714CF020E662FE002784E6 /* Source */,
 				536A8FB220E5511F008FBFF5 /* Youse_ChallengeTests.swift */,
 				536A8FB420E5511F008FBFF5 /* Info.plist */,
@@ -188,22 +199,16 @@
 		53714CF020E662FE002784E6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8062E06020E70F7400F831ED /* Helper */,
 				53714CF220E6631D002784E6 /* WebService */,
-				53714CF120E66304002784E6 /* Entities */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		53714CF120E66304002784E6 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		53714CF220E6631D002784E6 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				8062E05D20E70C9000F831ED /* Entities */,
 				53714CFE20E6640E002784E6 /* GooglePlace */,
 			);
 			path = WebService;
@@ -264,6 +269,32 @@
 				536A8FA620E5511F008FBFF5 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8062E05820E70C4200F831ED /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				8062E05B20E70C7400F831ED /* nearby.json */,
+				8062E06320E7103700F831ED /* nearby-result-entry.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		8062E05D20E70C9000F831ED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8062E05E20E70CAA00F831ED /* PlacesResultTest.swift */,
+				8062E06520E711DE00F831ED /* ResultListTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8062E06020E70F7400F831ED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8062E06120E70FA700F831ED /* Stub.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +392,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8062E06420E7103700F831ED /* nearby-result-entry.json in Resources */,
+				8062E05C20E70C7400F831ED /* nearby.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +516,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				536A8FB320E5511F008FBFF5 /* Youse_ChallengeTests.swift in Sources */,
+				8062E06220E70FA700F831ED /* Stub.swift in Sources */,
 				53714D0020E66427002784E6 /* PlacesParametersTests.swift in Sources */,
+				8062E05F20E70CAA00F831ED /* PlacesResultTest.swift in Sources */,
+				8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */,
 				53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */,
 				53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */,
 			);

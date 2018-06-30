@@ -1,0 +1,863 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CrQCJQEAAFaY42cuvsCjZg8ATHQ-FeNQ2-WNGsMoNqcsNQISq69-8rbcjhKMwIAa3GWxMWQbvHQCTFfdyqXgK0kgq3Qzp44mdvggBfEaL9M7og4nRW6vWbTrMV1XcmOjkszkuWSU-DWkd1nB32qa7MdSJjEXPq_wXLMxp3KURF8qHiBphU6wA3elobwM7bjNZCm9gnNoJCndtRXFZ0tGmgFdg747KwS8iHixqJ1lciZgJnNA6X6gbKQUbFI85NaIMEgbiWBWdTKdSHfPSQLfbAkXMSvALiAaebdkzIdFQXtxmuWyoCOPsml-9ltRweIVlvQ-JkTym37X-TiNEhc1V1eP0ZZ4VuvYf77c7zOV6y1LWKFSPcMjpxqM5ONhdxOVP99gXaEM40xlOFd5l3xtTRjn0kd7I3gSEPnzK65AY0H6PfQkfcgM2OEaFJBrRGWVsMuCaJjjy03EOfNUGSay",
+    "results": [
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.60700659999999,
+                "lng": -46.6947388
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.60573521970849,
+                "lng": -46.6934182697085
+                },
+                "southwest": {
+                "lat": -23.6084331802915,
+                "lng": -46.6961162302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "383366f11a779ae6dadd555a085a65ce8e1338cb",
+                "name": "KUMHO TIRE DO BRASIL COMERCIAL LTDA.",
+                "place_id": "ChIJeaz_VMtQzpQRB0m13mdHZFw",
+                "plus_code": {
+                "compound_code": "98V4+54 São Paulo, SP, Brasil",
+                "global_code": "588M98V4+54"
+                },
+                "rating": 2.1,
+                "reference": "CmRRAAAAAYMOcarrqBbh-jCWPs_zXEJ-raCqF1FqMqI__1DZ_9NFyRTUcRA02Y9YievRlo9g4k3HInVpbqdzM094HN4BtHW2LRQA7MKrSGGR39NcMHbBFSBaqi4lECqm_i4sFKc2EhDrXNLeyXXi42aagajs-wLPGhT-nynPVIQDzOzo0rg46N74cnfjyw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Flórida, 1758 - Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6077583,
+                "lng": -46.69731619999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6065444697085,
+                "lng": -46.69603566970849
+                },
+                "southwest": {
+                "lat": -23.6092424302915,
+                "lng": -46.69873363029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/gas_station-71.png",
+                "id": "f6e6c78708b02a55c15b5426ba6093c1b0fcfd8b",
+                "name": "Auto Via Reparos Automotivos",
+                "place_id": "ChIJ2Wq7cU5azpQRtV8td72OYUg",
+                "plus_code": {
+                "compound_code": "98R3+V3 São Paulo, SP, Brasil",
+                "global_code": "588M98R3+V3"
+                },
+                "rating": 4,
+                "reference": "CmRRAAAALMLdXHPQt5DDSUl6jGfXbAANJFQJhqW-TG7jM__RfxIEeY8p6rFZXdfEAVRFIMIG9UsMBEde7U33ZRywtQtiOSg8ADpIgP-ZC1qJFSGjeGQhAVv8TdFUcUQK7KGf7cWcEhCUqEKKrVC8mayDcr7RfObCGhQlxUy-y2TlFhsycaxbZwJ3_EXIVA",
+                "scope": "GOOGLE",
+                "types": [
+                          "gas_station",
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida das Nações Unidas, 16737, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6064087,
+                "lng": -46.6910979
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6051382697085,
+                "lng": -46.6898270697085
+                },
+                "southwest": {
+                "lat": -23.6078362302915,
+                "lng": -46.69252503029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "c06e436ea8d4747f1c61814b452ea046e5eaf687",
+                "name": "Mecânica Guaraiúva",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1536,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/111522499412472900434/photos\">EMERSON FONSECA</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAu-MydCJmVnw_mQdzk9eiNnElDt8-7NePtOptebFPaBqcCuim93FnUyFy7eCvXHnGIA04UDI9xMVj9AfNAMGSWcEgMG7z1_1XnOegv9fvK1ytGCGHqRwhux6TXrIg9eP8EhAIXQTGZpiIR8WEX6ljCHgJGhTfJ2idCayokFO57yE2cFgDE8e3mw",
+                           "width": 2048
+                           }
+                           ],
+                "place_id": "ChIJtVCJyMpQzpQRk_XWCX-4kqk",
+                "plus_code": {
+                "compound_code": "98V5+CH São Paulo, SP, Brasil",
+                "global_code": "588M98V5+CH"
+                },
+                "rating": 4.5,
+                "reference": "CmRSAAAAi-xGd2rkzxgPLkuritg1KWCRWjz1RlY5OBTHUkOwPXxu48KZrj26Tpi_L0JDhjshxuBWnlzA-ffCd-rTV1ybzokI2u1A12w14WUG1ZKfuelikI70US2QUU_O5rcl8lQ5EhCTT1KqMxhlMhhwurhnuWWyGhQkuSUGIudR7qQg0D8pcbsDsQweWQ",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Padre Antônio José dos Santos, 1542 - Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6035407,
+                "lng": -46.6916367
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6022100697085,
+                "lng": -46.69030581970849
+                },
+                "southwest": {
+                "lat": -23.6049080302915,
+                "lng": -46.69300378029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "78106a22608855b101c13f080a28d513305d2f15",
+                "name": "Autotron",
+                "opening_hours": {
+                "open_now": false
+                },
+                "place_id": "ChIJ4_wupjVXzpQRDMM0n_Q3RjE",
+                "plus_code": {
+                "compound_code": "98W5+H8 São Paulo, SP, Brasil",
+                "global_code": "588M98W5+H8"
+                },
+                "rating": 4.6,
+                "reference": "CmRRAAAA2_GL8AHbS9t3Pz9Zvc3D7Ycc1sMJwKAG49wJxpwYhD3AH7u4LpvuZXAh8d9aZVZPK2PfgCCpjaCRAshIJ4exZeSb7b_szk7E-Qb_WmYmmXx3giOlumaHI_B4JAFP7a51EhAdOucxqW5CT765a_ONiXrGGhRHbQhNiX2pLJxlRW5wUhURJ7A2eA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "electronics_store",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Guararapes, 1710 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6121842,
+                "lng": -46.69432679999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6107637197085,
+                "lng": -46.6929514197085
+                },
+                "southwest": {
+                "lat": -23.6134616802915,
+                "lng": -46.6956493802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "93783985047af55b7e14b009ce0750e5fe5e673c",
+                "name": "Nexen Tire do Brasil Ltda.",
+                "place_id": "ChIJQR2zXMlQzpQRQzCz4PL9h1Q",
+                "plus_code": {
+                "compound_code": "98Q4+47 São Paulo, SP, Brasil",
+                "global_code": "588M98Q4+47"
+                },
+                "reference": "CmRRAAAAsBJyhHe3G5CzFfOvrVowTS_gFpogVwCNYtAFrUrM3qUo7X0TQbSPJ3jwwFsayXO6rX7MrBUxTbsUpvFyoh8bTeiLaXUuW5lkiaW0B-WIRZvv65t0MpbxUtkwU-PrDXoSEhCDwtpSGP8UVYu2OXNdZvPPGhRYl2gw-XJjjT0ygjNog9iItaJwuw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua James Watt, 142 - Jardim Edith, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6043223,
+                "lng": -46.691358
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6029859697085,
+                "lng": -46.6899685197085
+                },
+                "southwest": {
+                "lat": -23.60568393029151,
+                "lng": -46.6926664802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "6c91820c5a1c5f6acbacda83adffcc02d803116b",
+                "name": "Multi Escape",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1440,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/112879571466249413068/photos\">Benedicto Leite</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAFlVBAr2Y_rVufx-npz2p6Mx6eY2zIJslmPjIDSEaaKSeHVcAHvwPxPMh7X5yWrwur5ehiLApPtROujLlMxnkFklGRYpaXPO6iC7gVYwxW_ELlgp2FcGNHYQntGjEkUriEhD2hEhK8SYO2a_azcJ5WtZeGhQoLGyV5kd6tXolBRirI2RBvI157w",
+                           "width": 2560
+                           }
+                           ],
+                "place_id": "ChIJKX4mEjVXzpQR1_T4EpMiLts",
+                "plus_code": {
+                "compound_code": "98W5+7F São Paulo, SP, Brasil",
+                "global_code": "588M98W5+7F"
+                },
+                "rating": 4.3,
+                "reference": "CmRSAAAAWspyjOga3XT9sXeGHYpB1ZoexnnH_bizAVVyEyd4SOAlHFBH_v3mhNurXi1VCXAGktynbtMEhuIl9felb-5LPJCc6SiYRH5i6DuFp1Xb9-WKzeOBAgVDbeXgqKlMpudAEhDP_iSW7sFiES3Vx5O657MhGhRNlT3GrifpSC_M32ctksUbozWP3w",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Nova Independência, 421 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6093097,
+                "lng": -46.6945594
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6079607197085,
+                "lng": -46.69321041970849
+                },
+                "southwest": {
+                "lat": -23.6106586802915,
+                "lng": -46.69590838029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "0e9c61d82e4a16057b6c7859afbffcbcdba71b3a",
+                "name": "Oficina Tutticar",
+                "place_id": "ChIJHW7ifstQzpQRH1yFFIAG7n8",
+                "plus_code": {
+                "compound_code": "98R4+75 São Paulo, SP, Brasil",
+                "global_code": "588M98R4+75"
+                },
+                "rating": 4,
+                "reference": "CmRRAAAA8A7ijDP-JtEseu5wwTx_FEA-YqVVWnosgVNR2KVxpda9JSvfzg2KZYCqp4etQjmniitazxzgoIV9mu1Uuzz5VHCDv1n5Uh3El1xCdRu2GC7DQMtdI5w0QeMMdr0e81i2EhDqt0QMCapEmhzItwFZkSuwGhQpDQEgDozMM-ASeFN-ksSBTn3G4g",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Nova Independência, 641 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6066047,
+                "lng": -46.69367739999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.60528321970849,
+                "lng": -46.6922404197085
+                },
+                "southwest": {
+                "lat": -23.6079811802915,
+                "lng": -46.69493838029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "2da292780f07c93543f885afb2248ff8913de69a",
+                "name": "YourCAR Consultoria e Fotografia Automotiva - Caçador de Carros (Car Hunter)",
+                "opening_hours": {
+                "open_now": true
+                },
+                "photos": [
+                           {
+                           "height": 1080,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/111866573233220523157/photos\">YourCAR Consultoria Automotiva - Caçador de Carros (Car Hunter)</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAYMNWQfSFt10w3tT5PlbCFZNiQ8Vu7pSGYBU7iPJCxPRRR6fMyS7uJbhZIuedL9YBLccxfyENxRUejx8qFuX-3xa6LOQxcShk6EPpcWkmRvOTCXCoyVFvJvuNIeELxeZ-EhAxCatcueA3EyW1JUG8nJ18GhRaNKUJ0xXu9bi2rqF-flSQT05ETw",
+                           "width": 1620
+                           }
+                           ],
+                "place_id": "ChIJFVDptDRXzpQR2FqGp54CVkE",
+                "plus_code": {
+                "compound_code": "98V4+9G São Paulo, SP, Brasil",
+                "global_code": "588M98V4+9G"
+                },
+                "reference": "CmRRAAAA-lAGPHurOxzxKzE-4OKNeIhvZobsfyywkIhbeIxtHQ8371j_EUEDIS7J8T-Tr-kWgiop5SgEhYoj-MAsjtvOGBhC2_ffI8Sxe4X2hM52eH-WhZNyrW0i1Y--ppP8y58TEhDMLtSbSFrgiywj3Y186nNdGhRwrmKcgWNAstSjwPCaizSO4OGXjQ",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Engenheiro Luís Carlos Berrini, 1140 - Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.60852299999999,
+                "lng": -46.6912832
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6071875197085,
+                "lng": -46.68991726970849
+                },
+                "southwest": {
+                "lat": -23.6098854802915,
+                "lng": -46.69261523029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "d5ba30aad8cdf04c25f531b07498ce0e9822d08f",
+                "name": "Catipará Comércio e Serviços LTDA",
+                "opening_hours": {
+                "open_now": false
+                },
+                "place_id": "ChIJW4_gXspQzpQRXlLeT5kgr-k",
+                "plus_code": {
+                "compound_code": "98R5+HF São Paulo, SP, Brasil",
+                "global_code": "588M98R5+HF"
+                },
+                "reference": "CmRSAAAAjSqDLvX1ZZngaCdCuEk8mNKDc2eLDehrDyD-YaUydZ2rwVgRB5atc7Eqz-Wz08wIW2L9-cTUSbiSoNxfJ-CtpooXYmgbbW1WHZnjrwvYE2tpQpHTZqfHTgSxOky3EfZeEhCilI6Qk29GHBoexs8GfefuGhSAoEzFP9mWbOiVwCWAzGHZLUrYTw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Catipará, 63 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.606119,
+                "lng": -46.69217250000001
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6046846697085,
+                "lng": -46.6907682197085
+                },
+                "southwest": {
+                "lat": -23.6073826302915,
+                "lng": -46.6934661802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "7497f79a53ec2b406a436a4cd5678caa8ca95ef4",
+                "name": "AJ LAUDOS E VISTORIAS",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1536,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/111522499412472900434/photos\">EMERSON FONSECA</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAirk7q-r8To-O4ZeO74jzN70NFsSsT-62uTEj07JyzQZYs3-BGXnEu5m0aCf5b70G79rKlfWulnZRxUbO1fdiHG0OMcyhATbfrFkImPZwkSMSlq1cEvJsSX1qZTpT7SnaEhADRSjSOILw7l1AOXl-cEs7GhTB3dff9P_NOTQEqcQt2qKkqeDs_w",
+                           "width": 2048
+                           }
+                           ],
+                "place_id": "ChIJCbpbKjVXzpQRGgY9Q9iB1pY",
+                "plus_code": {
+                "compound_code": "98V5+H4 São Paulo, SP, Brasil",
+                "global_code": "588M98V5+H4"
+                },
+                "rating": 4,
+                "reference": "CmRSAAAANtvSL_Cr8pkxxK-jr9ToOCDyKmjnfbqM9jKJVEmgu5fSW3EwVM9mR0aw9Ef7anja1BYViM5jEJBmESSfWQ576OG8JieLd3DDZeV0AKKu_DHc4HHs_RD8tE-OHBqs1JZFEhAFaNSCYr7UvF3opcKOEZdFGhQOfAGb8nMGDuGv8Yv_S5FPTVkYxg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Padre Antônio José dos Santos, 1667 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6060318,
+                "lng": -46.6915639
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6047600197085,
+                "lng": -46.6902892197085
+                },
+                "southwest": {
+                "lat": -23.6074579802915,
+                "lng": -46.6929871802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "94eae416c35705dc2f926c8b87b08e1e56bd7903",
+                "name": "Moretto Pneus - Hankook / Michelin",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1080,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/111153967759230610681/photos\">Marcos Carlos Santos</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAOR-vxjadDgqtdfleKLebaP7C9TkQdTykDoOuaAx1lGnJVan-aFGXx5OZneV2iyQF7WO5Gekn5f2TxvBXjF_lQdgPD3rlMcttb0x7cYPEBW3YVJMrYEF21TRi_R9MaRWhEhDNG4vetdcizxkuqY6IB89GGhRlow4fVmalCi5HLpqayUfvCmdr6Q",
+                           "width": 1920
+                           }
+                           ],
+                "place_id": "ChIJ-7fFMjVXzpQRgJ8FJxu5tPE",
+                "plus_code": {
+                "compound_code": "98V5+H9 São Paulo, SP, Brasil",
+                "global_code": "588M98V5+H9"
+                },
+                "rating": 4.3,
+                "reference": "CmRSAAAAeiaxgKhiPHATioV3TLJZaXjBfj-Cbpn-EY-AKX4UqcApuZMmcItoUSquLMedhak1nNUGtK_Nl2RtYjNRG1NKVyllT1WauA8dbfx0YqacTXuHwJ4jNMjPuMA76tgChXZWEhCj--shlyoTchOJCwipu_I0GhQNXPT0VzXO5X5SXNvYM2K9WXwieA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Padre Antônio José dos Santos, 1600 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6102495,
+                "lng": -46.6973603
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6088510697085,
+                "lng": -46.6962617197085
+                },
+                "southwest": {
+                "lat": -23.6115490302915,
+                "lng": -46.6989596802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "a7dcd3c99d163674b7a79d11f07e2baa17d7c0ba",
+                "name": "Personal Car Comércio e Assessoria Automotiva Spo",
+                "place_id": "ChIJA0GhJM1QzpQR_Min_s2CSIg",
+                "plus_code": {
+                "compound_code": "98Q3+W3 São Paulo, SP, Brasil",
+                "global_code": "588M98Q3+W3"
+                },
+                "reference": "CmRSAAAAde6-GIXVS8YGIyELzm81tNZ3WDqI3_cdny90WMmkChe5qrw56Ej7iPZEcRcbYN-79JvddExptQgH7WFVD0_kvqdOlB2WcJdXYhuR4UlUNArR0V611lnpsXRIFnmGH7lREhBu4Grtxu61AjQa5ge01T_HGhQ252FlZYJ_OvzTUgpOzYrRnwyIkg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida das Nações Unidas, 12901 - Itaim Bibi, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6086876,
+                "lng": -46.69002620000001
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6074032197085,
+                "lng": -46.6887388197085
+                },
+                "southwest": {
+                "lat": -23.6101011802915,
+                "lng": -46.6914367802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "da90caf3c97fa5923e51fc9f9eb002e9ff125943",
+                "name": "MotorFast",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1536,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/110060706203416886573/photos\">Julio Yoshinari</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAnHdqPAJQbWiS5v6yK5qs10ukIiLsfsc52RM4ZrI1ujmwFTpzmwzaIpiYDU4Ta57HtJbGWFVQMQp393hXsRBLTt5Tkb4zQXZ5cCnpbC0fl5mHw0EAX3p9R8PNIVQTxiBqEhBSn-utGglhmN0XBGCd2X3PGhQQNxM3DQktbQ14uqm9qqtXan04qQ",
+                           "width": 2048
+                           }
+                           ],
+                "place_id": "ChIJCSQ7dMpQzpQRAXxnccQv3nQ",
+                "plus_code": {
+                "compound_code": "98R5+GX São Paulo, SP, Brasil",
+                "global_code": "588M98R5+GX"
+                },
+                "rating": 4.7,
+                "reference": "CmRRAAAAiF8z-Lelx7GShmvhsjtDrTbnq0EYrHt2QUNpCI6j1FDq9rwMSCtW71tOO3qV1Al5YcOXH0Vmtwj3I_3DPlSRwYv8AnyvjgNVIfIQrPF8BkFQ17tGlp6R6hen2W9mg7unEhB5AEXuIkfhU6OYR6UPsfxRGhS4d-csVG1Oi7EX38G5xRHzXKn5VA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Pensilvânia, 1272 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6120736,
+                "lng": -46.6932858
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6106235197085,
+                "lng": -46.6920612197085
+                },
+                "southwest": {
+                "lat": -23.6133214802915,
+                "lng": -46.6947591802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "94294b772b089ee307a59320e5f8612a07dd5fca",
+                "name": "Hankook Tire Brasil",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 2042,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/117027128946785963444/photos\">Hankook Tire Brasil</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAVfCKcLvh_BF_zrx8lgF0oGTjjkvlvp8yNTm9rtwQextnzGsh9STXoPskX9S3uqW6CBYbXSsqOOyTA4ryQfr2QV5iaW6cQSU8reRBNklByLZFKmL0qG7k0DA1g4etRpgPEhBboMItvr3WNa2uhZ_h-RP8GhS4qP7WO7L6d89w17Xbcmx54lx2Fg",
+                           "width": 2042
+                           }
+                           ],
+                "place_id": "ChIJDbn61jVXzpQRKjjXDw9aymw",
+                "plus_code": {
+                "compound_code": "98Q4+5M São Paulo, SP, Brasil",
+                "global_code": "588M98Q4+5M"
+                },
+                "rating": 5,
+                "reference": "CmRRAAAAVL6hZGRfnEHwW2Qv7sg_y5-eyEDUDknCO-RAXvjbFc8XTSoQeNkD7r1ztWviATYINSCd795yJGFa7k5FdqYSk3rcUFo4qlIX-8qH6PJIW4Kd-M8LtTQBtW4FkEBThfa2EhB-fuwRviXGVdwxie4yHEDGGhSKw2G_pFKfh3Kb8DkaGdOVYGld5A",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua George Ohm, 230 - Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6044769,
+                "lng": -46.6951239
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6031279197085,
+                "lng": -46.6937749197085
+                },
+                "southwest": {
+                "lat": -23.6058258802915,
+                "lng": -46.69647288029149
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "432818d42197f30b50bbd3daf319fc154807b462",
+                "name": "Tok E Retok",
+                "place_id": "ChIJS9JUhDNXzpQRli1WbS6Q05o",
+                "plus_code": {
+                "compound_code": "98W3+6X São Paulo, SP, Brasil",
+                "global_code": "588M98W3+6X"
+                },
+                "reference": "CmRSAAAAn76vrS16uvNAcdhjPUfP4Tblpl-Xd9omxFr1b1OCnXN0x5MWsX20ysmZOLjDMqUSBEDPWjm98p2YHQeirhHJaxGX5RjpoMGOqhXNEq58ofdnNwW5IFA_Uhll2sOSnbouEhDDsDHdVr16nIquVOjXrRY0GhQOBO9LHbs6rc-7polrsEWNdR_W2w",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6075329,
+                "lng": -46.68856590000001
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6061948697085,
+                "lng": -46.6872029697085
+                },
+                "southwest": {
+                "lat": -23.6088928302915,
+                "lng": -46.6899009302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "7170eaf1825cffb5d97ddc42651c6390d12b34cc",
+                "name": "Garagem 64 Oficina de Motos",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 960,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/118423681345790412855/photos\">Dan Prado</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAHoAljxdzJzr5ea0qu__yAuiplr0zefjB31b-b_2vb_qIb0YXJdHnUeRsSrlHX_1dBY3w8i04uCz757KxZRMw3RXPtZUjb_iwYlKWiOzkPdHjrihh_TKZX04LrVgI9FbUEhCRV9Iyw8QLbVu8bgfyxUZ9GhSijC71CzrD11Qek-NezhyM-W6NkA",
+                           "width": 1280
+                           }
+                           ],
+                "place_id": "ChIJaeVHoLVQzpQRsQ4IqRLAyvI",
+                "plus_code": {
+                "compound_code": "98R6+XH São Paulo, SP, Brasil",
+                "global_code": "588M98R6+XH"
+                },
+                "rating": 4.8,
+                "reference": "CmRSAAAA78sHaHHfoi1rH3ZaD7YpO8eTGEh-7VTHPKdyAA0DFJoCydscb-EV6uB_oQQ9Ike95lXI4Fp3FKcgCYAYvQxmmcG8_uaH5MquWxr214IcFnj-Jj3sEgwqANClqDq__CgqEhAxEjopOlMJdMwcZ9U_8-qdGhSUKW93dS2A1BL7Fw7eOSiFwne-5A",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Conceição de Monte Alegre, 837 - Cidade Monções, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6019523,
+                "lng": -46.6914999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.60058866970849,
+                "lng": -46.6901986697085
+                },
+                "southwest": {
+                "lat": -23.6032866302915,
+                "lng": -46.6928966302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "c7f7d455ee2e139bb8455a38691ba9815019d9df",
+                "name": "TAG Pneus II",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 720,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/118283749538538547416/photos\">TAG Pneus II</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAwSqZXxzG_o0oARSnVw41xCo2mkVchstSDsjDlBCqCip3qI0-24JY9WOTWN2kZEPuAa1JrytgVOYLjMN4HMcrTP9qOrFTbotBBwgKp0qliTaANDL5bxswaLQw_pP4yxH8EhAiuUHeGkzCbi8gH2SG-Rg5GhRAeygGHifwNOH2dLQON5wNlELPnQ",
+                           "width": 960
+                           }
+                           ],
+                "place_id": "ChIJP3M02zVXzpQR4HGKBGKCVnQ",
+                "plus_code": {
+                "compound_code": "98X5+6C São Paulo, SP, Brasil",
+                "global_code": "588M98X5+6C"
+                },
+                "reference": "CmRRAAAAXsXMXMejJVyEUxNdqmpHHFJTg4xL6nW0e12OO7hRslgDAnu96l_8qxIUK5mPXtpqODk-FkaRotVyJNbzvTmHb8eflqgnnig02bMG7znYlUO311CX77ZDBlKCZuYEU3nhEhByYyuyXpmIMWYMsz2PbiEKGhShJILeDidnNX0tt-5m0rdt_Oexpg",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Avenida Engenheiro Luís Carlos Berrini, 583 - Itaim Bibi, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.60378649999999,
+                "lng": -46.6916015
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.60239881970849,
+                "lng": -46.6902143197085
+                },
+                "southwest": {
+                "lat": -23.6050967802915,
+                "lng": -46.6929122802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "bc983273fbaacb64d731195f54d665e27b1d7acf",
+                "name": "AutoFix ® Serviços Automotivos Ltda",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1920,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/104828794157870622747/photos\">AutoFix ® Serviços Automotivos Ltda</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAA_y1-oWySxtsLAA8IkYCo0dFx0xmQJYNq1cMTaCMYwzRh1rS-YWh6tyu-lD71bmcHLozcT3fs-_YmNSS15QYWGPRbAQC_asVqNFVSnMXMzyBoS7ABE3eKkNrB3SbiSmvgEhAdDIQS5q_-K0P3q_gAEbV8GhRd4jHK6v0M89oABqDd62rJxBrhwg",
+                           "width": 2560
+                           }
+                           ],
+                "place_id": "ChIJHdB1CDVXzpQRUhbWR6iiavw",
+                "plus_code": {
+                "compound_code": "98W5+F9 São Paulo, SP, Brasil",
+                "global_code": "588M98W5+F9"
+                },
+                "rating": 5,
+                "reference": "CmRSAAAAdYUFwQpG8gLqwtCFjyVOzLg1mc_nsODu0tGM1S0ozqiO7K76-xe91UdEXHF9p8pBwxwFhRmlsApR1PcVvQICQgrBOvXjgrdu0LryG4cgsoTbizGCQRWfl0MLrGXoKW5yEhDvH4NrNkMv0brPDW3YuDM3GhR0dDVznL5X3MjTADaHGYziXTYwZw",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Guararapes, 1697 - Brooklin Paulista, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.603609,
+                "lng": -46.69144499999999
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6023058197085,
+                "lng": -46.6901412197085
+                },
+                "southwest": {
+                "lat": -23.6050037802915,
+                "lng": -46.6928391802915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                "id": "4e1849c4457028384e07854760b41f0d48e6b1d1",
+                "name": "Braskape Autopeças",
+                "opening_hours": {
+                "open_now": false
+                },
+                "photos": [
+                           {
+                           "height": 1280,
+                           "html_attributions": [
+                                                 "<a href=\"https://maps.google.com/maps/contrib/103564243204307575374/photos\">Braskape Autopeças</a>"
+                                                 ],
+                           "photo_reference": "CmRaAAAAnA2LPFhmrMjuY4cybVa9qwrwB8ccQ6l5LQm1s7UixyrJxAncbQT5UYCd-jSIlcWxA743QO5AVhLA39-2IVhuBZMx4IBoi-pgeXhygFusHaQFmucKRn_rB-fEVEWA8OFtEhBOFz_X6qk4iXUjlKWGhMolGhQqgY6n98LX7xYo6HagQZa076MQGg",
+                           "width": 720
+                           }
+                           ],
+                "place_id": "ChIJxdBipzVXzpQRVDSz7t6P4_c",
+                "plus_code": {
+                "compound_code": "98W5+HC São Paulo, SP, Brasil",
+                "global_code": "588M98W5+HC"
+                },
+                "rating": 3.8,
+                "reference": "CmRSAAAAGiiiCME8Lz9pk-KilxE-qJFJxeEjvgU10w4Kvo6cWQrGkzNIotzFAEOLnmvJ9feqb6nyhCgm3rSca0YakWgcspIeRruuuPoLAQ08l4QF0eqXnhblc5yKkJCpl9rI0OJJEhDoeAt3X3l5TWUENObRhRW5GhQWTElduFB4kgSFZUn8vu7fWDvz-w",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "store",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Guararapes, 1696 - Brooklin Novo, São Paulo"
+                },
+                {
+                "geometry": {
+                "location": {
+                "lat": -23.6031536,
+                "lng": -46.6950672
+                },
+                "viewport": {
+                "northeast": {
+                "lat": -23.6017820697085,
+                "lng": -46.6937104697085
+                },
+                "southwest": {
+                "lat": -23.6044800302915,
+                "lng": -46.6964084302915
+                }
+                }
+                },
+                "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                "id": "3a48a5f42379e9c9242108febb5abfb670f68f38",
+                "name": "Evydhence Brooklin Vistorias Automotivas",
+                "opening_hours": {
+                "open_now": false
+                },
+                "place_id": "ChIJeYaX8DNXzpQRDrWQbvTt5KM",
+                "plus_code": {
+                "compound_code": "98W3+PX São Paulo, SP, Brasil",
+                "global_code": "588M98W3+PX"
+                },
+                "rating": 4.8,
+                "reference": "CmRSAAAAMidf7gLzfMBXI25SPYVZyuF6cdTs4pzqYZhQCoo-ZNEBQ-qFvpxRFsC-2W3ylFhbOkJq9o9GCddDoMnYvQiTbCGY0-4hlMMePu4fsGPbdpzmvHYpS_JTKhhwTOzBLvvlEhBkCkbLkrcNLdhe3KnDwEMzGhTBCXlEU1DMDi_KTF6Tb1CM-4V2AA",
+                "scope": "GOOGLE",
+                "types": [
+                          "car_repair",
+                          "point_of_interest",
+                          "establishment"
+                          ],
+                "vicinity": "Rua Alcídes Lourenço da Rocha, 281 - Cidade Monções, São Paulo"
+                }
+                ],
+    "status": "OK"
+}

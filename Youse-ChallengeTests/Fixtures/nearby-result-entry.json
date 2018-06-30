@@ -1,0 +1,36 @@
+{
+    "geometry": {
+        "location": {
+            "lat": -23.60700659999999,
+            "lng": -46.6947388
+        },
+        "viewport": {
+            "northeast": {
+                "lat": -23.60573521970849,
+                "lng": -46.6934182697085
+            },
+            "southwest": {
+                "lat": -23.6084331802915,
+                "lng": -46.6961162302915
+            }
+        }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+    "id": "383366f11a779ae6dadd555a085a65ce8e1338cb",
+    "name": "KUMHO TIRE DO BRASIL COMERCIAL LTDA.",
+    "place_id": "ChIJeaz_VMtQzpQRB0m13mdHZFw",
+    "plus_code": {
+        "compound_code": "98V4+54 São Paulo, SP, Brasil",
+        "global_code": "588M98V4+54"
+    },
+    "rating": 2.1,
+    "reference": "CmRRAAAAAYMOcarrqBbh-jCWPs_zXEJ-raCqF1FqMqI__1DZ_9NFyRTUcRA02Y9YievRlo9g4k3HInVpbqdzM094HN4BtHW2LRQA7MKrSGGR39NcMHbBFSBaqi4lECqm_i4sFKc2EhDrXNLeyXXi42aagajs-wLPGhT-nynPVIQDzOzo0rg46N74cnfjyw",
+    "scope": "GOOGLE",
+    "types": [
+              "car_repair",
+              "store",
+              "point_of_interest",
+              "establishment"
+              ],
+    "vicinity": "Rua Flórida, 1758 - Cidade Monções, São Paulo"
+}
