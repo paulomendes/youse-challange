@@ -34,6 +34,11 @@
 		8062E06220E70FA700F831ED /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06120E70FA700F831ED /* Stub.swift */; };
 		8062E06420E7103700F831ED /* nearby-result-entry.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E06320E7103700F831ED /* nearby-result-entry.json */; };
 		8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06520E711DE00F831ED /* ResultListTests.swift */; };
+		8062E06820E71C1C00F831ED /* nearby-empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E06720E71C1C00F831ED /* nearby-empty.json */; };
+		8062E06A20E71CD800F831ED /* PlaceDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06920E71CD800F831ED /* PlaceDetailTests.swift */; };
+		8062E06C20E71D4500F831ED /* review.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E06B20E71D4500F831ED /* review.json */; };
+		8062E06E20E71DBA00F831ED /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E06D20E71DBA00F831ED /* ReviewTests.swift */; };
+		8062E07020E71ED200F831ED /* place-details.json in Resources */ = {isa = PBXBuildFile; fileRef = 8062E06F20E71ED200F831ED /* place-details.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		8062E06120E70FA700F831ED /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		8062E06320E7103700F831ED /* nearby-result-entry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "nearby-result-entry.json"; sourceTree = "<group>"; };
 		8062E06520E711DE00F831ED /* ResultListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListTests.swift; sourceTree = "<group>"; };
+		8062E06720E71C1C00F831ED /* nearby-empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "nearby-empty.json"; sourceTree = "<group>"; };
+		8062E06920E71CD800F831ED /* PlaceDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailTests.swift; sourceTree = "<group>"; };
+		8062E06B20E71D4500F831ED /* review.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = review.json; sourceTree = "<group>"; };
+		8062E06D20E71DBA00F831ED /* ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTests.swift; sourceTree = "<group>"; };
+		8062E06F20E71ED200F831ED /* place-details.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "place-details.json"; sourceTree = "<group>"; };
 		D3A2CEDB0CBD23A109D0487E /* Pods_Youse_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youse_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFFF1613A2CF55CC971A3EF /* Pods-Youse-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		F1563147B4E61C09CF28FC56 /* Pods-Youse-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +286,9 @@
 			children = (
 				8062E05B20E70C7400F831ED /* nearby.json */,
 				8062E06320E7103700F831ED /* nearby-result-entry.json */,
+				8062E06720E71C1C00F831ED /* nearby-empty.json */,
+				8062E06B20E71D4500F831ED /* review.json */,
+				8062E06F20E71ED200F831ED /* place-details.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -285,6 +298,8 @@
 			children = (
 				8062E05E20E70CAA00F831ED /* PlacesResultTest.swift */,
 				8062E06520E711DE00F831ED /* ResultListTests.swift */,
+				8062E06920E71CD800F831ED /* PlaceDetailTests.swift */,
+				8062E06D20E71DBA00F831ED /* ReviewTests.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -392,8 +407,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8062E07020E71ED200F831ED /* place-details.json in Resources */,
 				8062E06420E7103700F831ED /* nearby-result-entry.json in Resources */,
+				8062E06C20E71D4500F831ED /* review.json in Resources */,
 				8062E05C20E70C7400F831ED /* nearby.json in Resources */,
+				8062E06820E71C1C00F831ED /* nearby-empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,8 +535,10 @@
 			files = (
 				536A8FB320E5511F008FBFF5 /* Youse_ChallengeTests.swift in Sources */,
 				8062E06220E70FA700F831ED /* Stub.swift in Sources */,
+				8062E06E20E71DBA00F831ED /* ReviewTests.swift in Sources */,
 				53714D0020E66427002784E6 /* PlacesParametersTests.swift in Sources */,
 				8062E05F20E70CAA00F831ED /* PlacesResultTest.swift in Sources */,
+				8062E06A20E71CD800F831ED /* PlaceDetailTests.swift in Sources */,
 				8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */,
 				53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */,
 				53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */,

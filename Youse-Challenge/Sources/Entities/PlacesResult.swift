@@ -1,6 +1,6 @@
 import Foundation
 
-struct PlacesResult: Decodable {
+struct PlacesResult: Model {
     let placeId: String
     let icon: URL
     let name: String
@@ -14,6 +14,6 @@ struct PlacesResult: Decodable {
     }
 }
 
-struct ResultList: Decodable {
+struct ResultList: Model {
     let results: [PlacesResult]
 }

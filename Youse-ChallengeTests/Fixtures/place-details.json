@@ -1,0 +1,155 @@
+{
+    "html_attributions": [],
+    "result": {
+        "address_components": [
+                               {
+                               "long_name": "1758",
+                               "short_name": "1758",
+                               "types": [
+                                         "street_number"
+                                         ]
+                               },
+                               {
+                               "long_name": "Rua Flórida",
+                               "short_name": "R. Flórida",
+                               "types": [
+                                         "route"
+                                         ]
+                               },
+                               {
+                               "long_name": "Cidade Monções",
+                               "short_name": "Cidade Monções",
+                               "types": [
+                                         "sublocality_level_1",
+                                         "sublocality",
+                                         "political"
+                                         ]
+                               },
+                               {
+                               "long_name": "São Paulo",
+                               "short_name": "São Paulo",
+                               "types": [
+                                         "administrative_area_level_2",
+                                         "political"
+                                         ]
+                               },
+                               {
+                               "long_name": "São Paulo",
+                               "short_name": "SP",
+                               "types": [
+                                         "administrative_area_level_1",
+                                         "political"
+                                         ]
+                               },
+                               {
+                               "long_name": "Brasil",
+                               "short_name": "BR",
+                               "types": [
+                                         "country",
+                                         "political"
+                                         ]
+                               },
+                               {
+                               "long_name": "04565-001",
+                               "short_name": "04565-001",
+                               "types": [
+                                         "postal_code"
+                                         ]
+                               }
+                               ],
+        "adr_address": "<span class=\"street-address\">R. Flórida, 1758</span> - <span class=\"extended-address\">Cidade Monções</span>, <span class=\"locality\">São Paulo</span> - <span class=\"region\">SP</span>, <span class=\"postal-code\">04565-001</span>, <span class=\"country-name\">Brasil</span>",
+        "formatted_address": "R. Flórida, 1758 - Cidade Monções, São Paulo - SP, 04565-001, Brasil",
+        "formatted_phone_number": "(11) 5102-2633",
+        "geometry": {
+            "location": {
+                "lat": -23.60700659999999,
+                "lng": -46.6947388
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": -23.60573521970849,
+                    "lng": -46.6934182697085
+                },
+                "southwest": {
+                    "lat": -23.6084331802915,
+                    "lng": -46.6961162302915
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+        "id": "383366f11a779ae6dadd555a085a65ce8e1338cb",
+        "international_phone_number": "+55 11 5102-2633",
+        "name": "KUMHO TIRE DO BRASIL COMERCIAL LTDA.",
+        "place_id": "ChIJeaz_VMtQzpQRB0m13mdHZFw",
+        "plus_code": {
+            "compound_code": "98V4+54 São Paulo, SP, Brasil",
+            "global_code": "588M98V4+54"
+        },
+        "rating": 2.1,
+        "reference": "CmRRAAAAoymjHW6rxFk8GTavHw3MaH74s9ryz8Oag0ewm1gIICeTCcxfM_OgFPro4UAxDQut2qMv857wJsWPX-FrrHf7GpAFnGatpNi7-oVPNpnD8uTK245oO3iuY0l60YNAMxGxEhBVhRpaDFky8KFGSFa1hAKWGhTpL2oRrEIwuWaocsBvjM48lVYpiQ",
+        "reviews": [
+                    {
+                    "author_name": "Fabio Lins",
+                    "author_url": "https://www.google.com/maps/contrib/116241488534433430669/reviews",
+                    "language": "pt",
+                    "profile_photo_url": "https://lh5.googleusercontent.com/-uBcZ0-EXAJk/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq3KrVQ3pl9XTzs-_-CFNAkqqGso0A/s128-c0x00000000-cc-rp-mo/photo.jpg",
+                    "rating": 1,
+                    "relative_time_description": "um mês atrás",
+                    "text": "Pneus de péssima qualidade, no meu carro zero km duraram menos de 15000km. Tive que trocar os 4 pneus por outra marca.",
+                    "time": 1526465825
+                    },
+                    {
+                    "author_name": "JBR GB",
+                    "author_url": "https://www.google.com/maps/contrib/112933298985693093137/reviews",
+                    "language": "pt",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/-0ZZMHz1Bbto/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq2y1W8Y9TZ0zSbSeN-RVuWFij7Y6Q/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+                    "rating": 1,
+                    "relative_time_description": "5 meses atrás",
+                    "text": "Péssimo atendimento no telefone que aparece no maps, a já me atendeu dando coise dizendo que esse telefone não vende  etc, por mais que não seja lugar de vendas , acho que se atende um telefone assim ...",
+                    "time": 1515689383
+                    },
+                    {
+                    "author_name": "Ca Oak",
+                    "author_url": "https://www.google.com/maps/contrib/117101198641482823725/reviews",
+                    "language": "pt",
+                    "profile_photo_url": "https://lh3.googleusercontent.com/-I2mz5rUthiY/AAAAAAAAAAI/AAAAAAAAA4U/Jlntrh0HHFE/s128-c0x00000000-cc-rp-mo/photo.jpg",
+                    "rating": 5,
+                    "relative_time_description": "6 meses atrás",
+                    "text": "Meus Kumho rodaram 50.000 km no meu Cruze. Confortável, silencioso e grudado no chão.",
+                    "time": 1512842673
+                    },
+                    {
+                    "author_name": "Leonardo Cardoso",
+                    "author_url": "https://www.google.com/maps/contrib/111880301772912005228/reviews",
+                    "language": "pt",
+                    "profile_photo_url": "https://lh5.googleusercontent.com/--Qdw2_uu4Hg/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq3vR9q3z4sMGNtyhqg2hSCrAW4hQw/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+                    "rating": 1,
+                    "relative_time_description": "7 meses atrás",
+                    "text": "Pneus de péssima qualidade. Não duraram nem 7 meses.",
+                    "time": 1511031418
+                    },
+                    {
+                    "author_name": "Christos Apostolos Colohoridis",
+                    "author_url": "https://www.google.com/maps/contrib/110180312305129856371/reviews",
+                    "language": "pt",
+                    "profile_photo_url": "https://lh6.googleusercontent.com/-NF_VWnciQBw/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq1IE7IS1Bn9wqU55JkYebivUTc9Zw/s128-c0x00000000-cc-rp-mo/photo.jpg",
+                    "rating": 1,
+                    "relative_time_description": "um ano atrás",
+                    "text": "Pneus de baixa qualidade. Nao sao adequados as vias brasileiras",
+                    "time": 1494334624
+                    }
+                    ],
+        "scope": "GOOGLE",
+        "types": [
+                  "car_repair",
+                  "store",
+                  "point_of_interest",
+                  "establishment"
+                  ],
+        "url": "https://maps.google.com/?cid=6657524660604061959",
+        "utc_offset": -180,
+        "vicinity": "Rua Flórida, 1758 - Cidade Monções, São Paulo",
+        "website": "http://www.kumhopneus.com.br/"
+    },
+    "status": "OK"
+}

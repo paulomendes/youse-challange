@@ -6,7 +6,7 @@ import CoreLocation
 final class PlacesResultTest: QuickSpec {
     override func spec() {
         describe("When dealing with PlacesResult deserealization") {
-            it("should parse response correctly") {
+            it("should parse json correctly") {
                 let placesResult = PlacesResult.stubbed(from: "nearby-result-entry")
                 
                 expect(placesResult.name).to(equal("KUMHO TIRE DO BRASIL COMERCIAL LTDA."))
