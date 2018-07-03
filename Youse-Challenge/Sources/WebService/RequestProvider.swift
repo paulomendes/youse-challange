@@ -3,7 +3,6 @@ import RxSwift
 
 protocol RequestProviderType {
     func request<Model: Decodable>(target: Moya.TargetType) -> Single<Model>
-    func request(target: Moya.TargetType) -> Single<Response>
 }
 
 extension RequestProviderType {

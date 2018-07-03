@@ -34,6 +34,9 @@
 		53AD6E8E20EBDBFD00E4A66D /* PlaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */; };
 		53AD6E9220EBE60100E4A66D /* ReviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E9120EBE60100E4A66D /* ReviewViewModelTests.swift */; };
 		53AD6E9420EBE68E00E4A66D /* DetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E9320EBE68E00E4A66D /* DetailsViewModelTests.swift */; };
+		53AD6E9620EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E9520EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift */; };
+		53AD6E9820EBF30200E4A66D /* QuickSpecHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E9720EBF30200E4A66D /* QuickSpecHelper.swift */; };
+		53AD6E9A20EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E9920EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift */; };
 		803308D820EAB68600C0A8AA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803308D720EAB68600C0A8AA /* DetailsViewController.swift */; };
 		803308DA20EAC05000C0A8AA /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803308D920EAC05000C0A8AA /* DetailsRouter.swift */; };
 		803308DC20EAC06200C0A8AA /* DetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803308DB20EAC06200C0A8AA /* DetailsModule.swift */; };
@@ -110,6 +113,9 @@
 		53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModelTests.swift; sourceTree = "<group>"; };
 		53AD6E9120EBE60100E4A66D /* ReviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModelTests.swift; sourceTree = "<group>"; };
 		53AD6E9320EBE68E00E4A66D /* DetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelTests.swift; sourceTree = "<group>"; };
+		53AD6E9520EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceRepositoryTests.swift; sourceTree = "<group>"; };
+		53AD6E9720EBF30200E4A66D /* QuickSpecHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecHelper.swift; sourceTree = "<group>"; };
+		53AD6E9920EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Additions.swift"; sourceTree = "<group>"; };
 		758024C18A7AF6E85E2676F7 /* Pods-Youse-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-ChallengeTests/Pods-Youse-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		803308D720EAB68600C0A8AA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		803308D920EAC05000C0A8AA /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
@@ -309,6 +315,7 @@
 				53714CFF20E66427002784E6 /* CarRepairParametersTests.swift */,
 				53714D0420E66A4C002784E6 /* PlaceDetailsParametersTests.swift */,
 				53714D0620E66CC9002784E6 /* GooglePlacesTargetTests.swift */,
+				53AD6E9520EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift */,
 			);
 			path = GooglePlace;
 			sourceTree = "<group>";
@@ -427,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				8062E06120E70FA700F831ED /* Stub.swift */,
+				53AD6E9720EBF30200E4A66D /* QuickSpecHelper.swift */,
+				53AD6E9920EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -750,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AD6E9620EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift in Sources */,
 				536A8FB320E5511F008FBFF5 /* Youse_ChallengeTests.swift in Sources */,
 				8062E06220E70FA700F831ED /* Stub.swift in Sources */,
 				8062E06E20E71DBA00F831ED /* ReviewTests.swift in Sources */,
@@ -759,6 +769,8 @@
 				8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */,
 				53AD6E9220EBE60100E4A66D /* ReviewViewModelTests.swift in Sources */,
 				53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */,
+				53AD6E9820EBF30200E4A66D /* QuickSpecHelper.swift in Sources */,
+				53AD6E9A20EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift in Sources */,
 				53AD6E8E20EBDBFD00E4A66D /* PlaceViewModelTests.swift in Sources */,
 				53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */,
 				53AD6E9420EBE68E00E4A66D /* DetailsViewModelTests.swift in Sources */,

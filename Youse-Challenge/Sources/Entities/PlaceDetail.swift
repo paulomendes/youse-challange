@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-struct Review: Model {
+struct Review: Entity {
     let authorName: String
     let rating: Double
     let relativeTimeDescription: String
@@ -15,7 +15,7 @@ struct Review: Model {
     }
 }
 
-struct PlaceDetails: Model {
+struct PlaceDetails: Entity {
     let formattedAddress: String
     let formattedPhoneNumber: String?
     let name: String

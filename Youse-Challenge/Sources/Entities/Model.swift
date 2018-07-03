@@ -1,1 +1,1 @@
-protocol Model: Decodable {}
+protocol Entity: Decodable {}

@@ -1,6 +1,6 @@
 import Foundation
 
-struct PlacesResult: Model {
+struct PlacesResult: Entity {
     let placeId: String
     let icon: URL
     let name: String
@@ -25,6 +25,6 @@ struct PlacesResult: Model {
     }
 }
 
-struct ResultList: Model {
+struct ResultList: Entity {
     let results: [PlacesResult]
 }
