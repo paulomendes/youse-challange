@@ -11,8 +11,7 @@ extension Target {
     }
     
     var path: String {
-        let path = "\(self.urlPath)?\(self.parameters.toParameters())"
-        return path
+        return self.urlPath
     }
     
     var sampleData: Data {
@@ -20,7 +19,8 @@ extension Target {
     }
     
     var task: Task {
-        return .requestPlain
+        return .requestParameters(parameters: self.parameters.toParameters(),
+                                  encoding: URLEncoding.default)
     }
     
     var headers: [String : String]? {

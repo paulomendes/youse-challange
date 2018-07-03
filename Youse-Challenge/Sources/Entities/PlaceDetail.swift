@@ -1,4 +1,5 @@
 import Foundation
+import CoreLocation
 
 struct Review: Model {
     let authorName: String
@@ -22,9 +23,14 @@ struct PlaceDetail: Model {
     let name: String
     let placeId: String
     let reviews: [Review]
+    let location: CLLocationCoordinate2D
     
     private enum RootKeys: String, CodingKey {
         case result
+    }
+    
+    private enum GemoetryKeys: String, CodingKey {
+        case location
     }
     
     enum CodingKeys: String, CodingKey {
@@ -33,6 +39,7 @@ struct PlaceDetail: Model {
         case name
         case placeId = "place_id"
         case reviews
+        case geometry
     }
     
     public init(from decoder: Decoder) throws {
@@ -43,5 +50,9 @@ struct PlaceDetail: Model {
         self.name = try values.decode(String.self, forKey: .name)
         self.placeId = try values.decode(String.self, forKey: .placeId)
         self.reviews = try values.decode([Review].self, forKey: .reviews)
+        
+        let gemoetryValues = try values.nestedContainer(keyedBy: GemoetryKeys.self, forKey: .geometry)
+        let location: [String: Double] = try gemoetryValues.decode([String: Double].self, forKey: .location)
+        self.location = try CLLocationCoordinate2D(with: location)
     }
 }

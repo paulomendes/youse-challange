@@ -7,8 +7,8 @@ target 'Youse-Challenge' do
 
 	pod 'RxSwift'
 	pod 'INTULocationManager'
-	pod 'SnapKit'
 	pod 'Moya'
+    pod 'SwiftResolver'
 
 	target 'Youse-ChallengeTests' do
 	inherit! :search_paths

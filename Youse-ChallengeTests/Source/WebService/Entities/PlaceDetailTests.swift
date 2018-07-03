@@ -13,6 +13,8 @@ final class PlaceDetailTests: QuickSpec {
                 expect(details.placeId).to(equal("ChIJeaz_VMtQzpQRB0m13mdHZFw"))
                 expect(details.name).to(equal("KUMHO TIRE DO BRASIL COMERCIAL LTDA."))
                 expect(details.reviews.count).to(equal(5))
+                expect(details.location.latitude).to(beCloseTo(-23.60700659999999))
+                expect(details.location.longitude).to(beCloseTo(-46.6947388))
             }
         }
     }

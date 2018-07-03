@@ -13,6 +13,7 @@ final class PlacesResultTest: QuickSpec {
                 expect(placesResult.icon.absoluteString).to(equal("https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"))
                 expect(placesResult.placeId).to(equal("ChIJeaz_VMtQzpQRB0m13mdHZFw"))
                 expect(placesResult.vicinity).to(equal("Rua Flórida, 1758 - Cidade Monções, São Paulo"))
+                expect(placesResult.rating).to(equal(2.1))
             }
         }
     }

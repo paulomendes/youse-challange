@@ -6,7 +6,7 @@ struct PlacesParameters: Parameterizable {
     let radius: Int
     let types: String
     
-    func buildParameters() -> [AnyHashable: Any] {
+    func buildParameters() -> [String: Any] {
         return ["location": self.location.commaNotation(),
                 "radius": self.radius,
                 "types": self.types]

@@ -1,18 +1,15 @@
 import Foundation
 
 protocol Parameterizable {
-    func buildParameters() -> [AnyHashable: Any]
-    func toParameters() -> String
+    func buildParameters() -> [String: Any]
+    func toParameters() -> [String: Any]
 }
 
 extension Parameterizable {
-    func toParameters() -> String {
+    func toParameters() -> [String: Any] {
         var parameters = self.buildParameters()
         parameters["key"] = GoogleAPIConfiguration.apiKey
-        
-        return parameters.compactMap {
-            return "\($0)=\($1)"
-        }.joined(separator: "&")
+        return parameters
     }
 }
 

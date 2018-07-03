@@ -7,7 +7,7 @@ enum YCError: Error {
 }
 
 protocol GooglePlacesRepositoryProtocol {
-    func getCarRepairList(with parameters: PlacesParameters) -> Maybe<ResultList>
+    func getCarRepairList(with parameters: PlacesParameters) -> Single<ResultList>
     func getCarRepairDetail(with parameters: PlaceDetailsParameters) -> Single<PlaceDetail>
 }
 
@@ -19,7 +19,7 @@ final class GooglePlacesRepository: GooglePlacesRepositoryProtocol {
         self.requestProvider = requestProvider
     }
     
-    func getCarRepairList(with parameters: PlacesParameters) -> Maybe<ResultList> {
+    func getCarRepairList(with parameters: PlacesParameters) -> Single<ResultList> {
         return self.requestProvider
             .request(target: GooglePlacesTarget.places(parameters))
             .asObservable()
@@ -27,10 +27,17 @@ final class GooglePlacesRepository: GooglePlacesRepositoryProtocol {
                 let data = try JSONDecoder().decode(ResultList.self, from: $0.data)
                 return data
             }
-            .asMaybe()
+            .asSingle()
     }
     
     func getCarRepairDetail(with parameters: PlaceDetailsParameters) -> Single<PlaceDetail> {
-        return self.requestProvider.request(target: GooglePlacesTarget.placeDetails(parameters))
+        return self.requestProvider
+            .request(target: GooglePlacesTarget.placeDetails(parameters))
+            .asObservable()
+            .map {
+                let data = try JSONDecoder().decode(PlaceDetail.self, from: $0.data)
+                return data
+            }
+            .asSingle()
     }
 }
