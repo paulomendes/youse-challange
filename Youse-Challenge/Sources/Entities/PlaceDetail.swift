@@ -6,23 +6,21 @@ struct Review: Model {
     let rating: Double
     let relativeTimeDescription: String
     let text: String
-    let profilePhoto: URL
     
     enum CodingKeys: String, CodingKey {
         case authorName = "author_name"
         case rating
         case relativeTimeDescription = "relative_time_description"
         case text
-        case profilePhoto = "profile_photo_url"
     }
 }
 
-struct PlaceDetail: Model {
+struct PlaceDetails: Model {
     let formattedAddress: String
-    let formattedPhoneNumber: String
+    let formattedPhoneNumber: String?
     let name: String
     let placeId: String
-    let reviews: [Review]
+    let reviews: [Review]?
     let location: CLLocationCoordinate2D
     
     private enum RootKeys: String, CodingKey {
@@ -46,10 +44,10 @@ struct PlaceDetail: Model {
         let rawValues = try decoder.container(keyedBy: RootKeys.self)
         let values = try rawValues.nestedContainer(keyedBy: CodingKeys.self, forKey: .result)
         self.formattedAddress = try values.decode(String.self, forKey: .formattedAddress)
-        self.formattedPhoneNumber = try values.decode(String.self, forKey: .formattedPhoneNumber)
+        self.formattedPhoneNumber = try values.decodeIfPresent(String.self, forKey: .formattedPhoneNumber)
         self.name = try values.decode(String.self, forKey: .name)
         self.placeId = try values.decode(String.self, forKey: .placeId)
-        self.reviews = try values.decode([Review].self, forKey: .reviews)
+        self.reviews = try values.decodeIfPresent([Review].self, forKey: .reviews)
         
         let gemoetryValues = try values.nestedContainer(keyedBy: GemoetryKeys.self, forKey: .geometry)
         let location: [String: Double] = try gemoetryValues.decode([String: Double].self, forKey: .location)

@@ -1,9 +1,11 @@
-//
-//  MapCell.swift
-//  Youse-Challenge
-//
-//  Created by Paulo Mendes on 02/07/18.
-//  Copyright © 2018 YOuse. All rights reserved.
-//
+import UIKit
+import MapKit
+import CoreLocation
 
-import Foundation
+final class MapHeaderView: MKMapView {
+    func show(viewModel: DetailsViewModel) {
+        self.camera = viewModel.mapCamera
+        self.addAnnotation(viewModel.mapAnnotation)
+        self.isHidden = false
+    }
+}

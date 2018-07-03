@@ -1,7 +1,7 @@
 import Moya
 
 enum GooglePlacesTarget {
-    case places(PlacesParameters)
+    case places(CarRepairParameters)
     case placeDetails(PlaceDetailsParameters)
 }
 

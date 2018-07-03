@@ -1,4 +1,5 @@
 import Foundation
+import RxSwift
 
 protocol DetailsPresenterProtocol: Presenter {}
 
@@ -8,6 +9,7 @@ final class DetailsPresenter: DetailsPresenterProtocol {
     
     private let googlePlacesRepository: GooglePlacesRepositoryProtocol
     private let placeId: String
+    private let disposeBag = DisposeBag()
     
     init(googlePlacesRepository: GooglePlacesRepositoryProtocol,
          placeId: String) {
@@ -15,7 +17,19 @@ final class DetailsPresenter: DetailsPresenterProtocol {
         self.placeId = placeId
     }
     
-    func start() {}
+    func start() {
+        self.googlePlacesRepository
+            .getCarRepairDetails(with: PlaceDetailsParameters(placeId: self.placeId))
+            .subscribe { [weak self] single in
+                switch single {
+                case .success(let placeDetails):
+                    let viewModel = DetailsViewModel(placeDetails: placeDetails)
+                    self?.viewController?.show(viewModel: viewModel)
+                case .error:
+                    print("Error")
+                }
+            }.disposed(by: self.disposeBag)
+    }
 }
 
 extension DetailsPresenter: DetailsViewControllerDelegate {

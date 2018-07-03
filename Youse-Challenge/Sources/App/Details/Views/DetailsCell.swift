@@ -1,9 +1,9 @@
-//
-//  DetailsCell.swift
-//  Youse-Challenge
-//
-//  Created by Paulo Mendes on 02/07/18.
-//  Copyright © 2018 YOuse. All rights reserved.
-//
+import UIKit
 
-import Foundation
+final class DetailsCell: UITableViewCell {
+    @IBOutlet weak var info: UITextView!
+
+    func show(info: String) {
+        self.info.text = info
+    }
+}

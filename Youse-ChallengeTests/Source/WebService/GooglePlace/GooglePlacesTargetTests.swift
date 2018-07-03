@@ -9,15 +9,26 @@ final class GooglePlacesTargetTests: QuickSpec {
         it("should have correct configuration for GooglePlaces List API") {
             let anyLocation = CLLocationCoordinate2D(latitude: -23.6077583,
                                                      longitude: -46.697316199)
-            let placesParameters = PlacesParameters(location: anyLocation,
-                                                    radius: 1000,
-                                                    types: "car_repair")
-            
+            let placesParameters = CarRepairParameters(location: anyLocation)
             let target = GooglePlacesTarget.places(placesParameters)
+            let parameters = target.parameters.toParameters()
             
             expect(target.urlPath).to(equal("place/nearbysearch/json"))
-            let expectedPath = "place/nearbysearch/json?\(target.parameters.toParameters())"
-            expect(target.path).to(equal(expectedPath))
+            expect(parameters["location"] as? String).to(equal(anyLocation.commaNotation()))
+            expect(parameters["radius"] as? Int).to(equal(1000))
+            expect(parameters["types"] as? String).to(equal("car_repair"))
+            expect(parameters["key"]).toNot(beNil())
+        }
+        
+        it("should have correct configuration for GooglePlaces Details Place API") {
+            let placeId = "PlaceID"
+            let placeParameter = PlaceDetailsParameters(placeId: placeId)
+            let target = GooglePlacesTarget.placeDetails(placeParameter)
+            let parameters = target.parameters.toParameters()
+            
+            expect(target.urlPath).to(equal("place/details/json"))
+            expect(parameters["place_id"] as? String).to(equal(placeId))
+            expect(parameters["key"]).toNot(beNil())
         }
     }
 }

@@ -33,6 +33,7 @@ final class ListRouter: ListRouterProtocol {
             .asViewController()
             .navigationController?
             .pushViewController(detailsRouter.viewController.asViewController(), animated: true)
+        detailsRouter.start()
     }
 }
 

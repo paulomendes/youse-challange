@@ -27,27 +27,27 @@ final class ListPresenter: ListPresenterProtocol {
         self.locationRepository
             .requestLocation()
             .asObservable()
-            .flatMap(self.listPlaces)
+            .flatMap(self.carRepairList)
             .asSingle()
-            .subscribe { event in
-                switch event {
-                case .success(let places):
-                    let viewModels = places.results.map(PlaceViewModel.init)
-                    self.viewController?.show(viewModels: viewModels)
-                case .error(let error):
-                    print("Some error:\(error.localizedDescription)")
-                }
+            .subscribe { [weak self] event in
+                self?.handleCarRepairList(event)
             }.disposed(by: self.disposeBag)
     }
     
-    private func listPlaces(location: CLLocation) -> Observable<ResultList> {
-        let parameters = PlacesParameters(location: location.coordinate,
-                                          radius: 1000,
-                                          types: "car_repair")
-        
+    private func carRepairList(location: CLLocation) -> Observable<ResultList> {
         return self.googlePlacesRepository
-            .getCarRepairList(with: parameters)
+            .getCarRepairList(with: CarRepairParameters(location: location.coordinate))
             .asObservable()
+    }
+    
+    private func handleCarRepairList(_ event: SingleEvent<ResultList>) {
+        switch event {
+        case .success(let places):
+            let viewModels = places.results.map(PlaceViewModel.init)
+            self.viewController?.show(viewModels: viewModels)
+        case .error(let error):
+            print("Some error:\(error.localizedDescription)")
+        }
     }
 }
 
