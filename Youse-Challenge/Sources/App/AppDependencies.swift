@@ -31,11 +31,11 @@ extension AppDependencies {
 
 extension AppDependencies {
     private func registerWith(_ dependencies: DefaultDependencies) {
-        self.container.register { MoyaProvider<MultiTarget>(plugins: dependencies.plugins) }
+        self.container.register(scope: .shared) { MoyaProvider<MultiTarget>(plugins: dependencies.plugins) }
         self.container.register { INTULocationManager() }
         
         self.container.register { RequestProvider(provider: $0) }.as(RequestProviderType.self)
-        self.container.register { GooglePlacesRepository(requestProvider: $0) }.as(GooglePlacesRepositoryProtocol.self)
+        self.container.register(scope: .shared) { GooglePlacesRepository(requestProvider: $0) }.as(GooglePlacesRepositoryProtocol.self)
         self.container.register { LocationRepository(locationManager: $0) }.as(LocationRepositoryProtocol.self)
         
         self.container.register { AppModule(window: dependencies.window, listModule: $0) }
