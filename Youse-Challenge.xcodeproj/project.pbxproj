@@ -75,6 +75,7 @@
 		8062E08920E95D8600F831ED /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E08820E95D8600F831ED /* Presenter.swift */; };
 		8062E08B20E95DB500F831ED /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E08A20E95DB500F831ED /* ViewControllerType.swift */; };
 		8062E08D20E95F3D00F831ED /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E08C20E95F3D00F831ED /* AppDependencies.swift */; };
+		806B558B20ED7C5400D17790 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B558A20ED7C5400D17790 /* UIAlertController+Additions.swift */; };
 		809A3E7320E9623C00C19711 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809A3E7220E9623C00C19711 /* ListCell.swift */; };
 		80D3ECCF20EAA2DF00C76DF7 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3ECCE20EAA2DF00C76DF7 /* PlaceViewModel.swift */; };
 		80E9D0D020EC4E6600C136EC /* LocationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0CF20EC4E6600C136EC /* LocationRepositoryTests.swift */; };
@@ -174,6 +175,7 @@
 		8062E08820E95D8600F831ED /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		8062E08A20E95DB500F831ED /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
 		8062E08C20E95F3D00F831ED /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		806B558A20ED7C5400D17790 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		809A3E7220E9623C00C19711 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		80D3ECCE20EAA2DF00C76DF7 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		80E9D0CF20EC4E6600C136EC /* LocationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryTests.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				53714D0220E665D2002784E6 /* CLLocationCoordinate2D+Additions.swift */,
+				806B558A20ED7C5400D17790 /* UIAlertController+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/INTULocationManager/INTULocationManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftResolver/SwiftResolver.framework",
@@ -718,6 +722,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INTULocationManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftResolver.framework",
@@ -810,6 +815,7 @@
 				803308DC20EAC06200C0A8AA /* DetailsModule.swift in Sources */,
 				803308D820EAB68600C0A8AA /* DetailsViewController.swift in Sources */,
 				803308E920EB0B7B00C0A8AA /* AppNavigationViewController.swift in Sources */,
+				806B558B20ED7C5400D17790 /* UIAlertController+Additions.swift in Sources */,
 				8062E08920E95D8600F831ED /* Presenter.swift in Sources */,
 				53714CEF20E657A2002784E6 /* Target.swift in Sources */,
 				803308E320EAC08500C0A8AA /* MapCell.swift in Sources */,

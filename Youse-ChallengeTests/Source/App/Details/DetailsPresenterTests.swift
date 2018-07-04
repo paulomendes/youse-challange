@@ -41,6 +41,25 @@ final class DetailsPresenterTests: QuickSpec {
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
             
+            it("should call show error for an error request response") {
+                let repository = FauxGooglePlacesRepository(error: true)
+                let placeId = "ChIJeaz_VMtQzpQRB0m13mdHZFw"
+                let viewController = FauxDetailsViewController()
+                let showExpectation = QuickSpec.expectation(description: "called show")
+                
+                viewController.calledError = {
+                    showExpectation.fulfill()
+                }
+                
+                let presenter = DetailsPresenter(googlePlacesRepository: repository,
+                                                 placeId: placeId)
+                
+                presenter.viewController = viewController
+                presenter.start()
+                
+                QuickSpec.waitForExpectationsDefaultTimeout()
+            }
+            
             it("should call detach after viewDidDisappear") {
                 let repository = FauxGooglePlacesRepository(placeDetails: true)
                 let placeId = "ChIJeaz_VMtQzpQRB0m13mdHZFw"

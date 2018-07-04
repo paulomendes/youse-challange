@@ -6,10 +6,20 @@ import UIKit
 final class FauxListTableViewController: ListTableViewControllerProtocol {
     var delegate: ListTableViewControllerDelegate?
     var calledPush: ((_ viewController: UIViewController, _ animated: Bool) -> Void)?
-    var calledShow: ((_ viewModels: [PlaceViewModel]) -> Void)?
+    var calledShowReady: (() -> Void)?
+    var calledShowWithError: (() -> Void)?
+    var calledShowLoading: (() -> Void)?
     
-    func show(viewModels: [PlaceViewModel]) {
-        self.calledShow?(viewModels)
+    
+    func show(viewModel: ListTableViewModel) {
+        switch viewModel.type {
+        case .contentReady:
+            self.calledShowReady?()
+        case .error:
+            self.calledShowWithError?()
+        case .loading:
+            self.calledShowLoading?()
+        }
     }
     
     func asViewController() -> UIViewController {

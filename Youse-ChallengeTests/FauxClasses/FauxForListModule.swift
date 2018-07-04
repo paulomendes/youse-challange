@@ -3,6 +3,7 @@ import UIKit
 
 final class FauxDetailsViewController: DetailsViewControllerProtocol {
     var calledShow: ((_ viewModel: DetailsViewModel) -> Void)?
+    var calledError: (() -> Void)?
     func asViewController() -> UIViewController {
         return UIViewController()
     }
@@ -10,6 +11,11 @@ final class FauxDetailsViewController: DetailsViewControllerProtocol {
     func show(viewModel: DetailsViewModel) {
         self.calledShow?(viewModel)
     }
+    
+    func showError() {
+        self.calledError?()
+    }
+    func loading() {}
 }
 
 final class FauxListPresenter: ListPresenterProtocol {

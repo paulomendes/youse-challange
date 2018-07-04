@@ -1,5 +1,28 @@
 import Foundation
 
+enum ViewModelType {
+    case error
+    case loading
+    case contentReady
+}
+
+struct ListTableViewModel {
+    let type: ViewModelType
+    let places: [PlaceViewModel]
+    
+    static func error() -> ListTableViewModel {
+        return ListTableViewModel(type: .error, places: [])
+    }
+    
+    static func loading() -> ListTableViewModel {
+        return ListTableViewModel(type: .loading, places: [])
+    }
+    
+    static func contentReady(with places: [PlaceViewModel]) -> ListTableViewModel {
+        return ListTableViewModel(type: .contentReady, places: places)
+    }
+}
+
 struct PlaceViewModel {
     let name: String
     let address: String

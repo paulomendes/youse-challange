@@ -9,6 +9,8 @@ final class MockDetailsViewControllerDelegate: DetailsViewControllerDelegate {
     func viewDidDisappear() {
         self.calledViewDidDisappear?()
     }
+    
+    func retry() {}
 }
 
 final class DetailsViewControllerTests: QuickSpec {

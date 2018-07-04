@@ -40,6 +40,7 @@ struct PlaceDetails: Entity {
         case geometry
     }
     
+    
     public init(from decoder: Decoder) throws {
         let rawValues = try decoder.container(keyedBy: RootKeys.self)
         let values = try rawValues.nestedContainer(keyedBy: CodingKeys.self, forKey: .result)

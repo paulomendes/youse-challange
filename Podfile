@@ -4,7 +4,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Youse-Challenge' do
 	use_frameworks!
-
+    
+    pod 'JGProgressHUD'
 	pod 'INTULocationManager'
 	pod 'Moya'
     pod 'SwiftResolver'

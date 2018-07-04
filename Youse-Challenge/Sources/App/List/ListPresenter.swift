@@ -17,6 +17,7 @@ final class ListPresenter: ListPresenterProtocol {
     }
     
     func start() {
+        self.viewController?.show(viewModel: .loading())
         self.requestList()
     }
     
@@ -26,9 +27,9 @@ final class ListPresenter: ListPresenterProtocol {
                 switch resullList {
                 case .success(let list):
                     let viewModels = list.results.map(PlaceViewModel.init)
-                    self?.viewController?.show(viewModels: viewModels)
+                    self?.viewController?.show(viewModel: .contentReady(with: viewModels))
                 case .failure:
-                    print("Error")
+                    self?.viewController?.show(viewModel: .error())
                 }
         }
     }
@@ -39,13 +40,17 @@ final class ListPresenter: ListPresenterProtocol {
             case .success(let location):
                 self?.handleUserLocation(location)
             case .failure:
-                print("Error")
+                self?.viewController?.show(viewModel: .error())
             }
         }
     }
 }
 
 extension ListPresenter: ListTableViewControllerDelegate {
+    func retry() {
+        self.requestList()
+    }
+    
     func didSelectPlace(placeId: String) {
         self.router?.routeToDetails(with: placeId)
     }

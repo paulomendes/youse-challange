@@ -4,10 +4,12 @@ import Foundation
 final class FauxGooglePlacesRepository: GooglePlacesRepositoryProtocol {
     private var resultList: Bool
     private var placeDetails: Bool
+    private var error: Bool
     
-    init(resultList: Bool = false, placeDetails: Bool = false) {
+    init(resultList: Bool = false, placeDetails: Bool = false, error: Bool = false) {
         self.resultList = resultList
         self.placeDetails = placeDetails
+        self.error = error
     }
     
     var calledRepairList: (() -> Void)?
@@ -20,6 +22,10 @@ final class FauxGooglePlacesRepository: GooglePlacesRepositoryProtocol {
             let result = ResultList.stubbed(from: "nearby")
             completion(.success(result))
         }
+        
+        if self.error {
+            completion(.failure(YCError.requestError))
+        }
     }
     
     func getCarRepairDetails(with parameters: PlaceDetailsParameters,
@@ -28,6 +34,10 @@ final class FauxGooglePlacesRepository: GooglePlacesRepositoryProtocol {
         if self.placeDetails {
             let result = PlaceDetails.stubbed(from: "place-details")
             completion(.success(result))
+        }
+        
+        if self.error {
+            completion(.failure(YCError.requestError))
         }
     }
 }

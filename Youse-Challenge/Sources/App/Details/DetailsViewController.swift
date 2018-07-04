@@ -1,13 +1,17 @@
 import UIKit
+import JGProgressHUD
 
 //MARK: - Protocols Definitions
 
 protocol DetailsViewControllerDelegate: class {
     func viewDidDisappear()
+    func retry()
 }
 
 protocol DetailsViewControllerProtocol: ViewControllerType {
     func show(viewModel: DetailsViewModel)
+    func showError()
+    func loading()
 }
 
 //MARK: - DetailsViewController
@@ -17,9 +21,16 @@ final class DetailsViewController: UITableViewController, DetailsViewControllerP
 
     @IBOutlet weak var mapTableHeaderView: MapHeaderView!
     
+    private lazy var hud: JGProgressHUD = {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Carregando"
+        return hud
+    }()
+    
     private var viewModel: DetailsViewModel? = nil {
         didSet {
             self.tableView.reloadData()
+            self.hud.dismiss()
         }
     }
     
@@ -39,6 +50,17 @@ final class DetailsViewController: UITableViewController, DetailsViewControllerP
         self.navigationItem.title = viewModel.name
         self.mapTableHeaderView.show(viewModel: viewModel)
     }
+    
+    func loading() {
+        self.hud.show(in: self.view)
+    }
+    
+    func showError() {
+        self.hud.dismiss()
+        UIAlertController.showErrorAlert(in: self, withCancel: true) {
+            self.delegate?.retry()
+        }
+    }
 }
 
 //MARK: - TableView Protocol Methods
@@ -57,7 +79,7 @@ extension DetailsViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         guard let detailsSection = DetailsViewModelSections(rawValue: section) else {
-            fatalError("all sections should be implemented")
+            return nil
         }
         return detailsSection.title
     }

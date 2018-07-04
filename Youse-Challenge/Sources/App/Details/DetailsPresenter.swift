@@ -16,6 +16,11 @@ final class DetailsPresenter: DetailsPresenterProtocol {
     }
     
     func start() {
+        self.requestDetails()
+    }
+    
+    private func requestDetails() {
+        self.viewController?.loading()
         self.googlePlacesRepository
             .getCarRepairDetails(with: PlaceDetailsParameters(placeId: self.placeId)) { [weak self] (result) in
                 switch result {
@@ -23,13 +28,17 @@ final class DetailsPresenter: DetailsPresenterProtocol {
                     let viewModel = DetailsViewModel(placeDetails: placeDetails)
                     self?.viewController?.show(viewModel: viewModel)
                 case .failure:
-                    print("some error")
+                    self?.viewController?.showError()
                 }
         }
     }
 }
 
 extension DetailsPresenter: DetailsViewControllerDelegate {
+    func retry() {
+        self.requestDetails()
+    }
+    
     func viewDidDisappear() {
         self.router?.detachChild()
     }

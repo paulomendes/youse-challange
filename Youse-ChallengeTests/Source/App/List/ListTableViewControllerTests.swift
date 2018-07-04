@@ -9,6 +9,8 @@ final class MockListTableViewControllerDelegate : ListTableViewControllerDelegat
     func didSelectPlace(placeId: String) {
         self.calledDidSelectPlace?(placeId)
     }
+    
+    func retry() {}
 }
 
 final class ListTableViewControllerTests: QuickSpec {

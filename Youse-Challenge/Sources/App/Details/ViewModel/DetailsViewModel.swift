@@ -19,6 +19,7 @@ extension DetailsViewModelSections {
 }
 
 struct DetailsViewModel {
+    private let type: ViewModelType
     private let placeDetails: PlaceDetails
     
     var name: String {
@@ -75,5 +76,6 @@ struct DetailsViewModel {
     
     init(placeDetails: PlaceDetails) {
         self.placeDetails = placeDetails
+        self.type = .contentReady
     }
 }

@@ -34,8 +34,25 @@ final class ListPresenterTests: QuickSpec {
                 let viewController = FauxListTableViewController()
                 let showExpectation = QuickSpec.expectation(description: "called show view model")
                 
-                viewController.calledShow = { viewModels in
-                    expect(viewModels).to(beAKindOf([PlaceViewModel].self))
+                viewController.calledShowLoading = {
+                    showExpectation.fulfill()
+                }
+                
+                let presenter = ListPresenter(locationRepository: locationRepository,
+                                              googlePlacesRepository: googlePlacesRepository)
+                presenter.viewController = viewController
+                presenter.start()
+                
+                QuickSpec.waitForExpectationsDefaultTimeout()
+            }
+            
+            it("should call show error view model for request error response") {
+                let locationRepository = FauxLocationRepository(location: .anyLocation)
+                let googlePlacesRepository = FauxGooglePlacesRepository(error: true)
+                let viewController = FauxListTableViewController()
+                let showExpectation = QuickSpec.expectation(description: "called show view model")
+                
+                viewController.calledShowWithError = {
                     showExpectation.fulfill()
                 }
                 
