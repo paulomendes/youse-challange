@@ -22,6 +22,9 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
+## Slather Coverage
+CoverageOutput/
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa

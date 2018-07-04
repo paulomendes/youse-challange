@@ -4,12 +4,6 @@ import Nimble_Snapshots
 import UIKit
 @testable import Youse_Challenge
 
-extension UIViewController {
-    func preloadView() {
-        let _ = view
-    }
-}
-
 final class MockListTableViewControllerDelegate : ListTableViewControllerDelegate {
     var calledDidSelectPlace: ((_ placeId: String) -> Void)?
     func didSelectPlace(placeId: String) {

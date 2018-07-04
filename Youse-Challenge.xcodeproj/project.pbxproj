@@ -36,6 +36,7 @@
 		53A6791920ECEC4300411C49 /* DetailsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791820ECEC4300411C49 /* DetailsRouterTests.swift */; };
 		53A6791B20ECEC4F00411C49 /* DetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791A20ECEC4F00411C49 /* DetailsPresenterTests.swift */; };
 		53A6791D20ECEC5A00411C49 /* DetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791C20ECEC5A00411C49 /* DetailsViewControllerTests.swift */; };
+		53A6791F20ECF5E000411C49 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791E20ECF5E000411C49 /* UIViewController+Additions.swift */; };
 		53AD6E8320EB9A0B00E4A66D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8220EB9A0B00E4A66D /* DetailsViewModel.swift */; };
 		53AD6E8520EBC3AD00E4A66D /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8420EBC3AD00E4A66D /* ReviewViewModel.swift */; };
 		53AD6E8E20EBDBFD00E4A66D /* PlaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */; };
@@ -133,6 +134,7 @@
 		53A6791820ECEC4300411C49 /* DetailsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouterTests.swift; sourceTree = "<group>"; };
 		53A6791A20ECEC4F00411C49 /* DetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterTests.swift; sourceTree = "<group>"; };
 		53A6791C20ECEC5A00411C49 /* DetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		53A6791E20ECF5E000411C49 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		53AD6E8220EB9A0B00E4A66D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		53AD6E8420EBC3AD00E4A66D /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModelTests.swift; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				53AD6E9720EBF30200E4A66D /* QuickSpecHelper.swift */,
 				53AD6E9920EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift */,
 				53A6791220ECE14C00411C49 /* CLLocation+Additions.swift */,
+				53A6791E20ECF5E000411C49 /* UIViewController+Additions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -870,6 +873,7 @@
 				80E9D0E620EC79FE00C136EC /* MockViewControllers.swift in Sources */,
 				53AD6E9420EBE68E00E4A66D /* DetailsViewModelTests.swift in Sources */,
 				53A6791520ECE58600411C49 /* ListTableViewControllerTests.swift in Sources */,
+				53A6791F20ECF5E000411C49 /* UIViewController+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
