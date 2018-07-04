@@ -1,5 +1,28 @@
 # Youse Challenge
 
+# Setup
+
+Install bundle dependecies
+```sh
+bundle install
+```
+Install App Dependencies
+```sh
+bundle exec pod install
+```
+
+Run Unit Tests
+```sh
+bundle exec fastlane ios test
+```
+
+Show Coverage Tests Report
+```sh
+bundle exec fastlane ios coverage
+```
+
+
+
 ![module architecture](https://raw.githubusercontent.com/paulomendes/youse-challenge/master/module-architecture.png)
 
 ## Arquitetura do App
