@@ -1,8 +1,7 @@
 import INTULocationManager
-import RxSwift
 
 protocol LocationRepositoryProtocol {
-    func requestLocation() -> Single<CLLocation>
+    func requestLocation(completion: @escaping (_ location: Result<CLLocation>) -> Void)
 }
 
 final class LocationRepository: LocationRepositoryProtocol {
@@ -12,23 +11,17 @@ final class LocationRepository: LocationRepositoryProtocol {
         self.locationManager = locationManager
     }
     
-    func requestLocation() -> Single<CLLocation> {
-        return Single.create { single in
-            let locationRequestId =
-                self.locationManager.requestLocation { (location, intuAccuracy, intuStatus) in
-                    if let error = LocationError(intuStatus: intuStatus) {
-                        single(.error(error))
-                        return
-                    }
-                    guard let location = location else {
-                        single(.error(LocationError.unknown))
-                        return
-                    }
-                    single(.success(location))
+    func requestLocation(completion: @escaping (_ location: Result<CLLocation>) -> Void) {        
+        self.locationManager.requestLocation { (location, intuAccuracy, intuStatus) in
+            if let error = LocationError(intuStatus: intuStatus) {
+                completion(Result.failure(error))
+                return
             }
-            return Disposables.create {
-                self.locationManager.cancelLocationRequest(locationRequestId)
+            guard let location = location else {
+                completion(Result.failure(LocationError.unknown))
+                return
             }
-            }.subscribeOn(MainScheduler.instance)
+            completion(Result.success(location))
+        }
     }
 }

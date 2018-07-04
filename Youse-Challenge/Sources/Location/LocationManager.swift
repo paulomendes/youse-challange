@@ -1,8 +1,7 @@
 import INTULocationManager
 
 protocol LocationManagerProtocol {
-    func requestLocation(block: @escaping  INTULocationRequestBlock) -> INTULocationRequestID
-    func cancelLocationRequest(_ requestId: INTULocationRequestID)
+    @discardableResult func requestLocation(block: @escaping  INTULocationRequestBlock) -> INTULocationRequestID
 }
 
 final class LocationManager: LocationManagerProtocol {
@@ -17,9 +16,5 @@ final class LocationManager: LocationManagerProtocol {
                                                         timeout: 5.0,
                                                         delayUntilAuthorized: true,
                                                         block: block)
-    }
-    
-    func cancelLocationRequest(_ requestId: INTULocationRequestID) {
-        self.intuLocationManager.cancelLocationRequest(requestId)
     }
 }

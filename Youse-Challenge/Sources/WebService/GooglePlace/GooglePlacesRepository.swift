@@ -1,14 +1,16 @@
 import Moya
 import CoreLocation
-import RxSwift
 
 enum YCError: Error {
     case serializationError
+    case requestError
 }
 
 protocol GooglePlacesRepositoryProtocol {
-    func getCarRepairList(with parameters: CarRepairParameters) -> Single<ResultList>
-    func getCarRepairDetails(with parameters: PlaceDetailsParameters) -> Single<PlaceDetails>
+    func getCarRepairList(with parameters: CarRepairParameters,
+                          completion: @escaping (_ resultList: Result<ResultList>) -> Void)
+    func getCarRepairDetails(with parameters: PlaceDetailsParameters,
+                             completion: @escaping (_ resultList: Result<PlaceDetails>) -> Void)
 }
 
 final class GooglePlacesRepository: GooglePlacesRepositoryProtocol {    
@@ -17,12 +19,18 @@ final class GooglePlacesRepository: GooglePlacesRepositoryProtocol {
     init(requestProvider: RequestProviderType) {
         self.requestProvider = requestProvider
     }
-
-    func getCarRepairList(with parameters: CarRepairParameters) -> Single<ResultList> {
-        return self.requestProvider.request(target: GooglePlacesTarget.places(parameters))
+    
+    func getCarRepairList(with parameters: CarRepairParameters,
+                          completion: @escaping (_ resultList: Result<ResultList>) -> Void) {
+        self.requestProvider.request(target: GooglePlacesTarget.places(parameters)) { (result) in
+            completion(result)
+        }
     }
-
-    func getCarRepairDetails(with parameters: PlaceDetailsParameters) -> Single<PlaceDetails> {
-        return self.requestProvider.request(target: GooglePlacesTarget.placeDetails(parameters))
+    
+    func getCarRepairDetails(with parameters: PlaceDetailsParameters,
+                             completion: @escaping (_ resultList: Result<PlaceDetails>) -> Void) {
+        self.requestProvider.request(target: GooglePlacesTarget.placeDetails(parameters)) { (result) in
+            completion(result)
+        }
     }
 }

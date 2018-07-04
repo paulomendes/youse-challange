@@ -1,5 +1,4 @@
-import RxSwift
-import CoreLocation
+import Foundation
 @testable import Youse_Challenge
 
 final class FauxGooglePlacesRepository: GooglePlacesRepositoryProtocol {
@@ -14,23 +13,22 @@ final class FauxGooglePlacesRepository: GooglePlacesRepositoryProtocol {
     var calledRepairList: (() -> Void)?
     var calledCarRepairDetails: (() -> Void)?
     
-    func getCarRepairList(with parameters: CarRepairParameters) -> Single<ResultList> {
+    func getCarRepairList(with parameters: CarRepairParameters,
+                          completion: @escaping (_ resultList: Result<ResultList>) -> Void) {
         self.calledRepairList?()
-        
         if self.resultList {
             let result = ResultList.stubbed(from: "nearby")
-            return Single.just(result)
+            completion(.success(result))
         }
-        return Single.never()
     }
     
-    func getCarRepairDetails(with parameters: PlaceDetailsParameters) -> Single<PlaceDetails> {
+    func getCarRepairDetails(with parameters: PlaceDetailsParameters,
+                             completion: @escaping (_ resultList: Result<PlaceDetails>) -> Void) {
         self.calledCarRepairDetails?()
         if self.placeDetails {
             let result = PlaceDetails.stubbed(from: "place-details")
-            return Single.just(result)
+            completion(.success(result))
         }
-        return Single.never()
     }
 }
 

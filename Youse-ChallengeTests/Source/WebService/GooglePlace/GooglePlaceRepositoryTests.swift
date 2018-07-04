@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import RxSwift
 import Moya
 import CoreLocation
 @testable import Youse_Challenge
@@ -18,24 +17,22 @@ final class FauxRequestProvider: RequestProviderType {
     
     var didRequest: ((_ target: Moya.TargetType)->Void)?
     
-    func request<Model: Decodable>(target: Moya.TargetType) -> Single<Model> {
+    func request<Model: Decodable>(target: Moya.TargetType, completion: @escaping (_ result: Result<Model>) -> Void ) {
         self.didRequest?(target)
         
         if self.resultList {
             let result = ResultList.stubbed(from: "nearby")
-            return Single.just(result) as! PrimitiveSequence<SingleTrait, Model>
+            completion(.success(result as! Model))
         }
         
         if self.placeDetail {
             let result = PlaceDetails.stubbed(from: "place-details")
-            return Single.just(result) as! PrimitiveSequence<SingleTrait, Model>
+            completion(.success(result as! Model))
         }
         
         if self.error {
-            return Single.error(YCError.serializationError)
+            completion(.failure(YCError.serializationError))
         }
-        
-        return Single.never()
     }
 }
 
@@ -43,8 +40,6 @@ final class GooglePlaceRepositoryTests: QuickSpec {
     override func spec() {
         describe("When requesting Car Repair List") {
             it("should request with correct target") {
-                let disposeBag = DisposeBag()
-                
                 let fauxRequestProvider = FauxRequestProvider()
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
                 let expc = QuickSpec.expectation(description: "called getCarRepairList")
@@ -57,22 +52,19 @@ final class GooglePlaceRepositoryTests: QuickSpec {
                     expc.fulfill()
                 }
                 
-                repository
-                    .getCarRepairList(with: params)
-                    .subscribe{ single in
-                        switch single {
-                        case .success:
-                            XCTFail()
-                        case .error:
-                            XCTFail()
-                        }
-                    }.disposed(by: disposeBag)
-                
+                repository.getCarRepairList(with: params, completion: { (result) in
+                    switch result {
+                    case .success:
+                        XCTFail()
+                    case .failure:
+                        XCTFail()
+                    }
+                })
+
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
             
             it("should request return success for a success response") {
-                let disposeBag = DisposeBag()
                 let fauxRequestProvider = FauxRequestProvider(resultList: true)
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
                 
@@ -80,23 +72,20 @@ final class GooglePlaceRepositoryTests: QuickSpec {
                 let params = CarRepairParameters(location: anyLocation)
                 let expc = QuickSpec.expectation(description: "success call for repair list")
                 
-                repository
-                    .getCarRepairList(with: params)
-                    .subscribe{ single in
-                        switch single {
-                        case .success(let places):
-                            expect(places).to(beAKindOf(ResultList.self))
-                            expc.fulfill()
-                        case .error:
-                            XCTFail()
-                        }
-                    }.disposed(by: disposeBag)
+                repository.getCarRepairList(with: params, completion: { (result) in
+                    switch result {
+                    case .success(let places):
+                        expect(places).to(beAKindOf(ResultList.self))
+                        expc.fulfill()
+                    case .failure:
+                        XCTFail()
+                    }
+                })
                 
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
             
             it("should request return error for an error response") {
-                let disposeBag = DisposeBag()
                 let fauxRequestProvider = FauxRequestProvider(error: true)
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
                 
@@ -104,28 +93,24 @@ final class GooglePlaceRepositoryTests: QuickSpec {
                 let params = CarRepairParameters(location: anyLocation)
                 let expc = QuickSpec.expectation(description: "error call for repair list")
                 
-                repository
-                    .getCarRepairList(with: params)
-                    .subscribe { single in
-                        switch single {
-                        case .success:
-                            XCTFail()
-                        case .error(let error):
-                            expect(error).to(beAKindOf(YCError.self))
-                            let err = error as! YCError
-                            expect(err).to(equal(YCError.serializationError))
-                            expc.fulfill()
-                        }
-                    }.disposed(by: disposeBag)
-                
+                repository.getCarRepairList(with: params, completion: { (result) in
+                    switch result {
+                    case .success:
+                        XCTFail()
+                    case .failure(let error):
+                        expect(error).to(beAKindOf(YCError.self))
+                        let err = error as! YCError
+                        expect(err).to(equal(YCError.serializationError))
+                        expc.fulfill()
+                    }
+                })
+
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
         }
         
         describe("When requesting Car Detail List") {
             it("should request with correct target") {
-                let disposeBag = DisposeBag()
-                
                 let fauxRequestProvider = FauxRequestProvider()
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
                 let expc = QuickSpec.expectation(description: "called getCarRepairList")
@@ -137,65 +122,57 @@ final class GooglePlaceRepositoryTests: QuickSpec {
                     expc.fulfill()
                 }
                 
-                repository
-                    .getCarRepairDetails(with: params)
-                    .subscribe{ single in
-                        switch single {
-                        case .success:
-                            XCTFail()
-                        case .error:
-                            XCTFail()
-                        }
-                    }.disposed(by: disposeBag)
+                repository.getCarRepairDetails(with: params, completion: { (result) in
+                    switch result {
+                    case .success:
+                        XCTFail()
+                    case .failure:
+                        XCTFail()
+                    }
+                })
                 
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
             
             it("should request return success for a success response") {
-                let disposeBag = DisposeBag()
                 let fauxRequestProvider = FauxRequestProvider(placeDetail: true)
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
 
                 let params = PlaceDetailsParameters(placeId: "placeid")
                 let expc = QuickSpec.expectation(description: "success call for detail")
                 
-                repository
-                    .getCarRepairDetails(with: params)
-                    .subscribe{ single in
-                        switch single {
-                        case .success(let places):
-                            expect(places).to(beAKindOf(PlaceDetails.self))
-                            expc.fulfill()
-                        case .error:
-                            XCTFail()
-                        }
-                    }.disposed(by: disposeBag)
+                repository.getCarRepairDetails(with: params, completion: { (result) in
+                    switch result {
+                    case .success(let places):
+                        expect(places).to(beAKindOf(PlaceDetails.self))
+                        expc.fulfill()
+                    case .failure:
+                        XCTFail()
+                    }
+                })
                 
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
             
             it("should request return error for an error response") {
-                let disposeBag = DisposeBag()
                 let fauxRequestProvider = FauxRequestProvider(error: true)
                 let repository = GooglePlacesRepository(requestProvider: fauxRequestProvider)
                 
                 let params = PlaceDetailsParameters(placeId: "placeid")
                 let expc = QuickSpec.expectation(description: "error call for detail")
                 
-                repository
-                    .getCarRepairDetails(with: params)
-                    .subscribe { single in
-                        switch single {
-                        case .success:
-                            XCTFail()
-                        case .error(let error):
-                            expect(error).to(beAKindOf(YCError.self))
-                            let err = error as! YCError
-                            expect(err).to(equal(YCError.serializationError))
-                            expc.fulfill()
-                        }
-                    }.disposed(by: disposeBag)
-                
+                repository.getCarRepairDetails(with: params, completion: { (result) in
+                    switch result {
+                    case .success:
+                        XCTFail()
+                    case .failure(let error):
+                        expect(error).to(beAKindOf(YCError.self))
+                        let err = error as! YCError
+                        expect(err).to(equal(YCError.serializationError))
+                        expc.fulfill()
+                    }
+                })
+
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
         }

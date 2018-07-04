@@ -1,7 +1,5 @@
-import RxSwift
 import CoreLocation
 @testable import Youse_Challenge
-
 
 final class FauxLocationRepository: LocationRepositoryProtocol {
     private var location: CLLocation?
@@ -11,14 +9,11 @@ final class FauxLocationRepository: LocationRepositoryProtocol {
         self.location = location
     }
     
-    func requestLocation() -> Single<CLLocation> {
+    func requestLocation(completion: @escaping (_ location: Result<CLLocation>) -> Void) {
         self.calledRequestLocation?()
-        
         if let location = self.location {
-            return Single.just(location)
+            completion(.success(location))
         }
-        
-        return Single.never()
     }
 }
 

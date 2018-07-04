@@ -1,5 +1,4 @@
 import Foundation
-import RxSwift
 import CoreLocation
 
 protocol ListPresenterProtocol: Presenter {}
@@ -10,8 +9,6 @@ final class ListPresenter: ListPresenterProtocol {
    
     private let locationRepository: LocationRepositoryProtocol
     private let googlePlacesRepository: GooglePlacesRepositoryProtocol
-
-    private let disposeBag = DisposeBag()
     
     init(locationRepository: LocationRepositoryProtocol,
          googlePlacesRepository: GooglePlacesRepositoryProtocol) {
@@ -23,30 +20,27 @@ final class ListPresenter: ListPresenterProtocol {
         self.requestList()
     }
     
+    private func handleUserLocation(_ location: CLLocation) {
+        self.googlePlacesRepository
+            .getCarRepairList(with: CarRepairParameters(location: location.coordinate)) { [weak self] (resullList) in
+                switch resullList {
+                case .success(let list):
+                    let viewModels = list.results.map(PlaceViewModel.init)
+                    self?.viewController?.show(viewModels: viewModels)
+                case .failure:
+                    print("Error")
+                }
+        }
+    }
+    
     private func requestList() {
-        self.locationRepository
-            .requestLocation()
-            .asObservable()
-            .flatMap(self.carRepairList)
-            .asSingle()
-            .subscribe { [weak self] event in
-                self?.handleCarRepairList(event)
-            }.disposed(by: self.disposeBag)
-    }
-    
-    private func carRepairList(location: CLLocation) -> Observable<ResultList> {
-        return self.googlePlacesRepository
-            .getCarRepairList(with: CarRepairParameters(location: location.coordinate))
-            .asObservable()
-    }
-    
-    private func handleCarRepairList(_ event: SingleEvent<ResultList>) {
-        switch event {
-        case .success(let places):
-            let viewModels = places.results.map(PlaceViewModel.init)
-            self.viewController?.show(viewModels: viewModels)
-        case .error(let error):
-            print("Some error:\(error.localizedDescription)")
+        self.locationRepository.requestLocation { [weak self] (resultLocation) in
+            switch resultLocation {
+            case .success(let location):
+                self?.handleUserLocation(location)
+            case .failure:
+                print("Error")
+            }
         }
     }
 }

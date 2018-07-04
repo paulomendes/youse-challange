@@ -1,12 +1,9 @@
 import Quick
 import Nimble
 import INTULocationManager
-import RxSwift
 @testable import Youse_Challenge
 
 final class FauxLocationManager: LocationManagerProtocol {
-    var cancelLocationCall: (()->Void)?
-    
     private let returnStatus: INTULocationStatus
     private let location: CLLocationCoordinate2D?
     
@@ -26,38 +23,26 @@ final class FauxLocationManager: LocationManagerProtocol {
         block(location, .block, self.returnStatus)
         return 0
     }
-    
-    func cancelLocationRequest(_ requestId: INTULocationRequestID) {
-        self.cancelLocationCall?()
-    }
-    
-    
 }
 
 final class LocationRepositoryTests: QuickSpec {
     override func spec() {
         describe("when dealing with location") {
-            it("should parse correctly a success location and cancel request after completed") {
+            it("should parse correctly a success location") {
                 let locationManager = FauxLocationManager()
                 let locationRepository = LocationRepository(locationManager: locationManager)
                 let expc = QuickSpec.expectation(description: "success location response")
-                let expc2 = QuickSpec.expectation(description: "cancel location request")
-                let disposeBag = DisposeBag()
                 
-                locationManager.cancelLocationCall = {
-                    expc2.fulfill()
-                }
-                
-                locationRepository.requestLocation().subscribe { single in
-                    switch single {
+                locationRepository.requestLocation(completion: { (result) in
+                    switch result {
                     case .success(let location):
                         expect(location.coordinate.longitude).to(beCloseTo(CLLocationCoordinate2D.anyLocation.longitude))
                         expect(location.coordinate.latitude).to(beCloseTo(CLLocationCoordinate2D.anyLocation.latitude))
                         expc.fulfill()
-                    case .error:
+                    case .failure:
                         XCTFail()
                     }
-                    }.disposed(by: disposeBag)
+                })
                 
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
@@ -68,24 +53,21 @@ final class LocationRepositoryTests: QuickSpec {
                                                                .servicesDisabled,
                                                                .servicesNotDetermined,
                                                                .servicesRestricted]
-                
                 for status in allLocationStatus {
                     let locationManager = FauxLocationManager(returnStatus: status)
                     let locationRepository = LocationRepository(locationManager: locationManager)
                     let expc = QuickSpec.expectation(description: "success location response")
                     
-                    let disposeBag = DisposeBag()
-                    
-                    locationRepository.requestLocation().subscribe { single in
-                        switch single {
+                    locationRepository.requestLocation(completion: { (result) in
+                        switch result {
                         case .success:
                             XCTFail("success status for error status: \(status)")
-                        case .error(let error):
+                        case .failure(let error):
                             expect(error).to(beAKindOf(LocationError.self))
                             expc.fulfill()
                         }
-                        }.disposed(by: disposeBag)
-                    
+                    })
+
                     QuickSpec.waitForExpectationsDefaultTimeout()
                 }
             }
@@ -94,19 +76,18 @@ final class LocationRepositoryTests: QuickSpec {
                 let locationManager = FauxLocationManager(location: nil)
                 let locationRepository = LocationRepository(locationManager: locationManager)
                 let expc = QuickSpec.expectation(description: "error location response")
-                let disposeBag = DisposeBag()
                 
-                locationRepository.requestLocation().subscribe { single in
-                    switch single {
+                locationRepository.requestLocation(completion: { (result) in
+                    switch result {
                     case .success:
                         XCTFail()
-                    case .error(let error):
+                    case .failure(let error):
                         let err = error as! LocationError
                         expect(err).to(equal(LocationError.unknown))
                         expc.fulfill()
                     }
-                    }.disposed(by: disposeBag)
-                
+                })
+
                 QuickSpec.waitForExpectationsDefaultTimeout()
             }
         }
