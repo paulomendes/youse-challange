@@ -31,8 +31,8 @@ final class ListRouter: ListRouterProtocol {
         self.children.append(detailsRouter)
         self.viewController
             .asViewController()
-            .navigationController?
-            .pushViewController(detailsRouter.viewController.asViewController(), animated: true)
+            .pushViewController(detailsRouter.viewController.asViewController())
+        
         detailsRouter.start()
     }
 }

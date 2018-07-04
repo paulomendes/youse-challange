@@ -33,6 +33,7 @@ extension AppDependencies {
     private func registerWith(_ dependencies: DefaultDependencies) {
         self.container.register(scope: .shared) { MoyaProvider<MultiTarget>(plugins: dependencies.plugins) }
         self.container.register { INTULocationManager() }
+        self.container.register { LocationManager(intuLocationManager: $0) }.as(LocationManagerProtocol.self)
         
         self.container.register { RequestProvider(provider: $0) }.as(RequestProviderType.self)
         self.container.register(scope: .shared) { GooglePlacesRepository(requestProvider: $0) }.as(GooglePlacesRepositoryProtocol.self)
@@ -42,8 +43,7 @@ extension AppDependencies {
         self.container.register { ListModule(detailsModule: $0,
                                              googlePlacesRepository: $1,
                                              locationRepository: $2,
-                                             storyboard: dependencies.storyboard) }
-            .as(ListModuleProtocol.self)
+                                             storyboard: dependencies.storyboard) }.as(ListModuleProtocol.self)
         self.container.register { DetailsModule(googlePlacesRepository: $0,
                                                 storyboard: dependencies.storyboard) }.as(DetailsModuleProtocol.self)
     }

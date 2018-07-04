@@ -69,6 +69,17 @@
 		8062E08D20E95F3D00F831ED /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E08C20E95F3D00F831ED /* AppDependencies.swift */; };
 		809A3E7320E9623C00C19711 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809A3E7220E9623C00C19711 /* ListCell.swift */; };
 		80D3ECCF20EAA2DF00C76DF7 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3ECCE20EAA2DF00C76DF7 /* PlaceViewModel.swift */; };
+		80E9D0D020EC4E6600C136EC /* LocationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0CF20EC4E6600C136EC /* LocationRepositoryTests.swift */; };
+		80E9D0D220EC4EEC00C136EC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0D120EC4EEC00C136EC /* LocationManager.swift */; };
+		80E9D0D420EC5C3900C136EC /* AppModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0D320EC5C3900C136EC /* AppModuleTests.swift */; };
+		80E9D0D620EC5FFE00C136EC /* FauxForAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0D520EC5FFE00C136EC /* FauxForAppModule.swift */; };
+		80E9D0D820EC602D00C136EC /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0D720EC602D00C136EC /* AppRouterTests.swift */; };
+		80E9D0DA20EC642200C136EC /* ListModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0D920EC642200C136EC /* ListModuleTests.swift */; };
+		80E9D0DC20EC67C100C136EC /* FauxForListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0DB20EC67C100C136EC /* FauxForListModule.swift */; };
+		80E9D0DE20EC6A1900C136EC /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0DD20EC6A1900C136EC /* ListRouterTests.swift */; };
+		80E9D0E120EC6A4000C136EC /* FauxGooglePlacesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0E020EC6A4000C136EC /* FauxGooglePlacesRepository.swift */; };
+		80E9D0E320EC6A6B00C136EC /* FauxLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0E220EC6A6B00C136EC /* FauxLocationRepository.swift */; };
+		80E9D0E620EC79FE00C136EC /* MockViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E9D0E520EC79FE00C136EC /* MockViewControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +160,17 @@
 		8062E08C20E95F3D00F831ED /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		809A3E7220E9623C00C19711 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		80D3ECCE20EAA2DF00C76DF7 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		80E9D0CF20EC4E6600C136EC /* LocationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryTests.swift; sourceTree = "<group>"; };
+		80E9D0D120EC4EEC00C136EC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		80E9D0D320EC5C3900C136EC /* AppModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModuleTests.swift; sourceTree = "<group>"; };
+		80E9D0D520EC5FFE00C136EC /* FauxForAppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxForAppModule.swift; sourceTree = "<group>"; };
+		80E9D0D720EC602D00C136EC /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
+		80E9D0D920EC642200C136EC /* ListModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModuleTests.swift; sourceTree = "<group>"; };
+		80E9D0DB20EC67C100C136EC /* FauxForListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxForListModule.swift; sourceTree = "<group>"; };
+		80E9D0DD20EC6A1900C136EC /* ListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
+		80E9D0E020EC6A4000C136EC /* FauxGooglePlacesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxGooglePlacesRepository.swift; sourceTree = "<group>"; };
+		80E9D0E220EC6A6B00C136EC /* FauxLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxLocationRepository.swift; sourceTree = "<group>"; };
+		80E9D0E520EC79FE00C136EC /* MockViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewControllers.swift; sourceTree = "<group>"; };
 		D3A2CEDB0CBD23A109D0487E /* Pods_Youse_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Youse_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFFF1613A2CF55CC971A3EF /* Pods-Youse-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		F1563147B4E61C09CF28FC56 /* Pods-Youse-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youse-Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Youse-Challenge/Pods-Youse-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +239,8 @@
 		536A8FB120E5511F008FBFF5 /* Youse-ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				80E9D0E420EC79F200C136EC /* MockClasses */,
+				80E9D0DF20EC6A2E00C136EC /* FauxClasses */,
 				8062E05820E70C4200F831ED /* Fixtures */,
 				53714CF020E662FE002784E6 /* Source */,
 				536A8FB220E5511F008FBFF5 /* Youse_ChallengeTests.swift */,
@@ -272,6 +296,7 @@
 		53714CF020E662FE002784E6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				80E9D0CE20EC4E4D00C136EC /* Location */,
 				53AD6E8A20EBDBE700E4A66D /* App */,
 				8062E06020E70F7400F831ED /* Helper */,
 				53714CF220E6631D002784E6 /* WebService */,
@@ -342,6 +367,8 @@
 			children = (
 				53AD6E8F20EBE5E200E4A66D /* Details */,
 				53AD6E8B20EBDBED00E4A66D /* List */,
+				80E9D0D320EC5C3900C136EC /* AppModuleTests.swift */,
+				80E9D0D720EC602D00C136EC /* AppRouterTests.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -350,6 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				53AD6E8C20EBDBF200E4A66D /* ViewModel */,
+				80E9D0D920EC642200C136EC /* ListModuleTests.swift */,
+				80E9D0DD20EC6A1900C136EC /* ListRouterTests.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -445,6 +474,7 @@
 			children = (
 				8062E07220E7D17000F831ED /* LocationRepository.swift */,
 				8062E07420E7D6D700F831ED /* LocationError.swift */,
+				80E9D0D120EC4EEC00C136EC /* LocationManager.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -512,6 +542,33 @@
 				80D3ECCE20EAA2DF00C76DF7 /* PlaceViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80E9D0CE20EC4E4D00C136EC /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				80E9D0CF20EC4E6600C136EC /* LocationRepositoryTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		80E9D0DF20EC6A2E00C136EC /* FauxClasses */ = {
+			isa = PBXGroup;
+			children = (
+				80E9D0D520EC5FFE00C136EC /* FauxForAppModule.swift */,
+				80E9D0DB20EC67C100C136EC /* FauxForListModule.swift */,
+				80E9D0E020EC6A4000C136EC /* FauxGooglePlacesRepository.swift */,
+				80E9D0E220EC6A6B00C136EC /* FauxLocationRepository.swift */,
+			);
+			path = FauxClasses;
+			sourceTree = "<group>";
+		};
+		80E9D0E420EC79F200C136EC /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				80E9D0E520EC79FE00C136EC /* MockViewControllers.swift */,
+			);
+			path = MockClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -751,6 +808,7 @@
 				53714CFD20E663EB002784E6 /* PlaceDetailsParameters.swift in Sources */,
 				53AD6E8520EBC3AD00E4A66D /* ReviewViewModel.swift in Sources */,
 				53714CED20E655BC002784E6 /* GooglePlacesTarget.swift in Sources */,
+				80E9D0D220EC4EEC00C136EC /* LocationManager.swift in Sources */,
 				53AD6E8320EB9A0B00E4A66D /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,20 +817,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E9D0D820EC602D00C136EC /* AppRouterTests.swift in Sources */,
 				53AD6E9620EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift in Sources */,
 				536A8FB320E5511F008FBFF5 /* Youse_ChallengeTests.swift in Sources */,
+				80E9D0D420EC5C3900C136EC /* AppModuleTests.swift in Sources */,
 				8062E06220E70FA700F831ED /* Stub.swift in Sources */,
 				8062E06E20E71DBA00F831ED /* ReviewTests.swift in Sources */,
+				80E9D0D020EC4E6600C136EC /* LocationRepositoryTests.swift in Sources */,
 				53714D0020E66427002784E6 /* CarRepairParametersTests.swift in Sources */,
+				80E9D0D620EC5FFE00C136EC /* FauxForAppModule.swift in Sources */,
+				80E9D0DC20EC67C100C136EC /* FauxForListModule.swift in Sources */,
+				80E9D0DE20EC6A1900C136EC /* ListRouterTests.swift in Sources */,
 				8062E05F20E70CAA00F831ED /* PlacesResultTest.swift in Sources */,
 				8062E06A20E71CD800F831ED /* PlaceDetailTests.swift in Sources */,
 				8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */,
 				53AD6E9220EBE60100E4A66D /* ReviewViewModelTests.swift in Sources */,
+				80E9D0DA20EC642200C136EC /* ListModuleTests.swift in Sources */,
+				80E9D0E120EC6A4000C136EC /* FauxGooglePlacesRepository.swift in Sources */,
 				53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */,
 				53AD6E9820EBF30200E4A66D /* QuickSpecHelper.swift in Sources */,
 				53AD6E9A20EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift in Sources */,
+				80E9D0E320EC6A6B00C136EC /* FauxLocationRepository.swift in Sources */,
 				53AD6E8E20EBDBFD00E4A66D /* PlaceViewModelTests.swift in Sources */,
 				53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */,
+				80E9D0E620EC79FE00C136EC /* MockViewControllers.swift in Sources */,
 				53AD6E9420EBE68E00E4A66D /* DetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
