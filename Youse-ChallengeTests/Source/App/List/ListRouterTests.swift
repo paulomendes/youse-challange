@@ -6,7 +6,11 @@ import UIKit
 final class FauxListTableViewController: ListTableViewControllerProtocol {
     var delegate: ListTableViewControllerDelegate?
     var calledPush: ((_ viewController: UIViewController, _ animated: Bool) -> Void)?
-    func show(viewModels: [PlaceViewModel]) {}
+    var calledShow: ((_ viewModels: [PlaceViewModel]) -> Void)?
+    
+    func show(viewModels: [PlaceViewModel]) {
+        self.calledShow?(viewModels)
+    }
     
     func asViewController() -> UIViewController {
         let viewController = MockViewController()

@@ -29,6 +29,13 @@
 		53714D0520E66A4C002784E6 /* PlaceDetailsParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0420E66A4C002784E6 /* PlaceDetailsParametersTests.swift */; };
 		53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0620E66CC9002784E6 /* GooglePlacesTargetTests.swift */; };
 		53714D0920E6A9E6002784E6 /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53714D0820E6A9E6002784E6 /* RequestProvider.swift */; };
+		53A6791120ECDFF100411C49 /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791020ECDFF100411C49 /* ListPresenterTests.swift */; };
+		53A6791320ECE14C00411C49 /* CLLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791220ECE14C00411C49 /* CLLocation+Additions.swift */; };
+		53A6791520ECE58600411C49 /* ListTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791420ECE58600411C49 /* ListTableViewControllerTests.swift */; };
+		53A6791720ECEC3500411C49 /* DetailsModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791620ECEC3500411C49 /* DetailsModuleTests.swift */; };
+		53A6791920ECEC4300411C49 /* DetailsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791820ECEC4300411C49 /* DetailsRouterTests.swift */; };
+		53A6791B20ECEC4F00411C49 /* DetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791A20ECEC4F00411C49 /* DetailsPresenterTests.swift */; };
+		53A6791D20ECEC5A00411C49 /* DetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A6791C20ECEC5A00411C49 /* DetailsViewControllerTests.swift */; };
 		53AD6E8320EB9A0B00E4A66D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8220EB9A0B00E4A66D /* DetailsViewModel.swift */; };
 		53AD6E8520EBC3AD00E4A66D /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8420EBC3AD00E4A66D /* ReviewViewModel.swift */; };
 		53AD6E8E20EBDBFD00E4A66D /* PlaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */; };
@@ -119,6 +126,13 @@
 		53714D0420E66A4C002784E6 /* PlaceDetailsParametersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsParametersTests.swift; sourceTree = "<group>"; };
 		53714D0620E66CC9002784E6 /* GooglePlacesTargetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesTargetTests.swift; sourceTree = "<group>"; };
 		53714D0820E6A9E6002784E6 /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
+		53A6791020ECDFF100411C49 /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		53A6791220ECE14C00411C49 /* CLLocation+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Additions.swift"; sourceTree = "<group>"; };
+		53A6791420ECE58600411C49 /* ListTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewControllerTests.swift; sourceTree = "<group>"; };
+		53A6791620ECEC3500411C49 /* DetailsModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleTests.swift; sourceTree = "<group>"; };
+		53A6791820ECEC4300411C49 /* DetailsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouterTests.swift; sourceTree = "<group>"; };
+		53A6791A20ECEC4F00411C49 /* DetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterTests.swift; sourceTree = "<group>"; };
+		53A6791C20ECEC5A00411C49 /* DetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		53AD6E8220EB9A0B00E4A66D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		53AD6E8420EBC3AD00E4A66D /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 		53AD6E8D20EBDBFD00E4A66D /* PlaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModelTests.swift; sourceTree = "<group>"; };
@@ -379,6 +393,8 @@
 				53AD6E8C20EBDBF200E4A66D /* ViewModel */,
 				80E9D0D920EC642200C136EC /* ListModuleTests.swift */,
 				80E9D0DD20EC6A1900C136EC /* ListRouterTests.swift */,
+				53A6791020ECDFF100411C49 /* ListPresenterTests.swift */,
+				53A6791420ECE58600411C49 /* ListTableViewControllerTests.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -395,6 +411,10 @@
 			isa = PBXGroup;
 			children = (
 				53AD6E9020EBE5EE00E4A66D /* ViewModel */,
+				53A6791620ECEC3500411C49 /* DetailsModuleTests.swift */,
+				53A6791820ECEC4300411C49 /* DetailsRouterTests.swift */,
+				53A6791A20ECEC4F00411C49 /* DetailsPresenterTests.swift */,
+				53A6791C20ECEC5A00411C49 /* DetailsViewControllerTests.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -465,6 +485,7 @@
 				8062E06120E70FA700F831ED /* Stub.swift */,
 				53AD6E9720EBF30200E4A66D /* QuickSpecHelper.swift */,
 				53AD6E9920EBF39E00E4A66D /* CLLocationCoordinate2D+Additions.swift */,
+				53A6791220ECE14C00411C49 /* CLLocation+Additions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -817,12 +838,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A6791120ECDFF100411C49 /* ListPresenterTests.swift in Sources */,
 				80E9D0D820EC602D00C136EC /* AppRouterTests.swift in Sources */,
 				53AD6E9620EBEE9200E4A66D /* GooglePlaceRepositoryTests.swift in Sources */,
 				536A8FB320E5511F008FBFF5 /* Youse_ChallengeTests.swift in Sources */,
+				53A6791B20ECEC4F00411C49 /* DetailsPresenterTests.swift in Sources */,
 				80E9D0D420EC5C3900C136EC /* AppModuleTests.swift in Sources */,
+				53A6791D20ECEC5A00411C49 /* DetailsViewControllerTests.swift in Sources */,
 				8062E06220E70FA700F831ED /* Stub.swift in Sources */,
 				8062E06E20E71DBA00F831ED /* ReviewTests.swift in Sources */,
+				53A6791920ECEC4300411C49 /* DetailsRouterTests.swift in Sources */,
 				80E9D0D020EC4E6600C136EC /* LocationRepositoryTests.swift in Sources */,
 				53714D0020E66427002784E6 /* CarRepairParametersTests.swift in Sources */,
 				80E9D0D620EC5FFE00C136EC /* FauxForAppModule.swift in Sources */,
@@ -830,7 +855,9 @@
 				80E9D0DE20EC6A1900C136EC /* ListRouterTests.swift in Sources */,
 				8062E05F20E70CAA00F831ED /* PlacesResultTest.swift in Sources */,
 				8062E06A20E71CD800F831ED /* PlaceDetailTests.swift in Sources */,
+				53A6791320ECE14C00411C49 /* CLLocation+Additions.swift in Sources */,
 				8062E06620E711DE00F831ED /* ResultListTests.swift in Sources */,
+				53A6791720ECEC3500411C49 /* DetailsModuleTests.swift in Sources */,
 				53AD6E9220EBE60100E4A66D /* ReviewViewModelTests.swift in Sources */,
 				80E9D0DA20EC642200C136EC /* ListModuleTests.swift in Sources */,
 				80E9D0E120EC6A4000C136EC /* FauxGooglePlacesRepository.swift in Sources */,
@@ -842,6 +869,7 @@
 				53714D0720E66CC9002784E6 /* GooglePlacesTargetTests.swift in Sources */,
 				80E9D0E620EC79FE00C136EC /* MockViewControllers.swift in Sources */,
 				53AD6E9420EBE68E00E4A66D /* DetailsViewModelTests.swift in Sources */,
+				53A6791520ECE58600411C49 /* ListTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

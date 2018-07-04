@@ -2,11 +2,14 @@ import UIKit
 @testable import Youse_Challenge
 
 final class FauxDetailsViewController: DetailsViewControllerProtocol {
+    var calledShow: ((_ viewModel: DetailsViewModel) -> Void)?
     func asViewController() -> UIViewController {
         return UIViewController()
     }
     
-    func show(viewModel: DetailsViewModel) {}
+    func show(viewModel: DetailsViewModel) {
+        self.calledShow?(viewModel)
+    }
 }
 
 final class FauxListPresenter: ListPresenterProtocol {
@@ -15,6 +18,7 @@ final class FauxListPresenter: ListPresenterProtocol {
 
 final class FauxDetailsRouter: DetailsRouterProtocol {
     var calledStart: (() -> Void)?
+    var calledDetachChild: (() -> Void)?
     var children: [Router] = []
     var viewController: DetailsViewControllerProtocol {
         return FauxDetailsViewController()
@@ -22,7 +26,9 @@ final class FauxDetailsRouter: DetailsRouterProtocol {
     
     var delegate: DetailsRouterDelegate?
     
-    func detachChild() {}
+    func detachChild() {
+        self.calledDetachChild?()
+    }
     
     func start() {
         self.calledStart?()

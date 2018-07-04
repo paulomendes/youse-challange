@@ -10,11 +10,15 @@ final class FauxViewController: ViewControllerType {
 final class FauxListRouter: ListRouterProtocol {
     var children: [Router] = []
     var calledStart: (() -> Void)?
+    var calledRouteToDetails: ((_ placeId: String) -> Void)?
     func start() {
         self.calledStart?()
     }
     var viewController: ViewControllerType { return FauxViewController() }
-    func routeToDetails(with placeId: String) {}
+    
+    func routeToDetails(with placeId: String) {
+        self.calledRouteToDetails?(placeId)
+    }
 }
 
 final class FauxListModule: ListModuleProtocol {
